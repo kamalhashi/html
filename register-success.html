@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SAFAQAH</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.1/vue.min.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/covervid@1.0.0"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" ></script>
+
+  </head>
+  <body>
+
+    
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-primary fixed-top"  id="navbar" v-cloak >
+
+
+
+  <transition name="fade" mode="out-in">
+  <div class="container " v-if="!search"  style="margin-top: 20px;">
+    <div style="position: absolute; top: -30px; right: 20px; font-size: 10px;" class="hidden-sm-down-bak">
+
+      <a href="" style="font-size: 10px;">English</a>
+      <span class="mr-1 ml-1">|</span>
+      <a href="" style="font-size: 10px;">&#x627;&#x644;&#x639;&#x631;&#x628;&#x64A;&#x629;</a>
+    </div>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+  <a class="navbar-brand" href="index.html">SAFAQAH</a>
+  <div class="flag-selector" style="">
+    <div class="dropdown dropdown-country">
+      <button class="btn btn-secondary btn-xs dropdown-toggle" style="border: none; border-radius: 5px; background: transparent; cursor: pointer;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/ae.svg" style="width: 8px"/> <span style="margin-top: 5px;     font-size: 11px;">UAE</span>
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/bh.svg" style="width: 12px"/> Bahrain</a>
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/kw.svg" style="width: 12px"/> Kuwait</a>
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/om.svg" style="width: 12px"/> Oman</a>
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/qa.svg" style="width: 12px"/> Qatar</a>
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/sa.svg" style="width: 12px"/> Saudi Arabia</a>
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/ae.svg" style="width: 12px"/> UAE</a>
+      </div>
+    </div>
+                      </div>
+  <div class="collapse navbar-collapse" id="navbarColor01">
+
+    <ul class="navbar-nav mr-auto" >
+
+    </ul>
+    <ul class="navbar-nav" >
+
+      <li class="nav-item active dropdown">
+        <a class="nav-link dropdown-toggle" href="categories.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          All Categories
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="search.html">Agriculture <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Building & Construction <span class="text-muted">(2)</span></a>
+          <a class="dropdown-item" href="search.html">Computer, Internet & Technology <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Education <span class="text-muted">(2)</span></a>
+          <a class="dropdown-item" href="search.html">Entertainment & Leisure <span class="text-muted">(2)</span></a>
+          <a class="dropdown-item" href="search.html">Food & Beverage <span class="text-muted">(7)</span></a>
+          <a class="dropdown-item" href="search.html">Hair and Beauty <span class="text-muted">(2)</span></a>
+          <a class="dropdown-item" href="search.html">Health, Medical and Fitness <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Manufacturing <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Real Estate <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Retail <span class="text-muted">(4)</span></a>
+          <a class="dropdown-item" href="search.html">Service <span class="text-muted">(6)</span></a>
+          <a class="dropdown-item" href="search.html">Transportation <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Travel Related <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Wholesale & Distribution <span class="text-muted">(0)</span></a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="how.html">How it works</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pricing.html">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blog.html">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      
+      <li class="nav-item mr-2">
+        <a class="nav-link" href="login.html"><i class="icon-user icons"></i></a>
+      </li>
+      
+      
+      <li class="nav-item">
+        <a  href="edit.html" class="btn btn-primary my-2 my-sm-0">SELL YOUR BUSINESS</a>
+      </li>
+      
+    </ul>
+  </div>
+    </div>
+
+    <div class="container" v-else>
+  <div class="input-group search-bar">
+  <span class="input-group-addon"><i class="icon-magnifier icons"></i></span>
+  <input type="text" class="form-control form-control-lg" placeholder="Search">
+  <span class="input-group-addon" ><a href="" class="text-muted" v-on:click.prevent="hideSearchBar"><i class="icon-close icons"></i></a></span>
+</div>
+    </div>
+    </transition>
+
+</nav>
+
+
+
+
+      
+<div class=" light-blue pt-5 pb-5 ">
+
+<div class="container inner ">
+
+
+            <div class="row mt-5 mb-5">
+
+                <div class="col-md-6 offset-md-3 col-lg-4 offset-lg-4 mt-0">
+                    <div class="row">
+                        <div class="col-sm-12  pull-right">
+
+
+                              <div class="card">
+
+                                <div class="card-block">
+
+
+                                                  <h4>Sign up complete</h4>
+                                                  <p>We've sent a welcome email to:</p>
+
+                                                  <form>
+                                    <div class="form-group">
+                                      <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon1"><i class="icon-envelope icons"></i></span>
+                                        <input type="text" class="form-control" value="jack@sparrow.com" readonly placeholder="Username" aria-describedby="basic-addon1">
+                                      </div>
+                                                                        </div>
+                                  </form>
+                                                  <p>To confirm that this is your email address, click on the <strong>validation link</strong> in in the email we've sent you.</p>
+                                                  <p>Didn't receive it? <a href="login.html"><strong>[Resend my validation email]</strong></a></p>
+
+                                                  <a href="index.html" class="btn btn-primary btn-block">Take me home</a>
+
+
+                                </div>
+
+
+
+
+
+                              </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+            </div>
+            </div>
+
+
+
+
+
+    
+
+      <footer class="footer text-white mt-0">
+		<div class="container">
+			<div class="row pt-5">
+
+				<div class="col-md-12">
+<div class="row">
+
+				<div class="col-md-12">
+					<h5 class="mt-4 mb-4 text-center">LOGO</h5>
+				</div>
+
+        <div class="col-md-6 offset-md-3">
+          <p class="mt-4 mb-4 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pellentesque molestie augue, ut congue erat ullamcorper vitae.</p>
+        </div>
+
+        <div class="col-md-6 offset-md-3">
+
+          <div class="d-flex justify-content-center mb-3 mt-3">
+            <ul class="social-network social-circle">
+                                    <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook fa-fw"></i></a></li>
+                                    <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter fa-fw"></i></a></li>
+                                    <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin fa-fw"></i></a></li>
+                                </ul>
+</div>
+
+
+        </div>
+
+
+
+
+
+				</div>
+				</div>
+
+
+			</div>
+			<br />
+			<br />
+		</div>
+      </footer>
+      
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+
+	<script>
+		var eventTime = moment().add(8, 'hours'); // Timestamp - Sun, 21 Apr 2013 13:00:00 GMT
+		var currentTime = 1366547400; // Timestamp - Sun, 21 Apr 2013 12:30:00 GMT
+		var diffTime = eventTime - currentTime;
+		var duration = moment.duration(diffTime*1000, 'milliseconds');
+		var interval = 1000;
+
+		setInterval(function(){
+		  duration = moment.duration(duration - interval, 'milliseconds');
+			$('#current_time').text(moment().format('MMMM Do YYYY, h:mma'));
+		}, interval);
+	</script>
+  </body>
+</html>
+
+    <script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='//www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','');ga('send','pageview');
+</script>
+
+    <script>
+var app = new Vue({
+  el: '#navbar',
+  data: {
+    search: false
+  },
+  methods: {
+    showSearchBar: function () {
+      this.search = true;
+    },
+    hideSearchBar: function () {
+      this.search = false;
+    }
+  }
+})
+</script>
+
+  </body>
+</html>

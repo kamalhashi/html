@@ -1,0 +1,1022 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SAFAQAH</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.1/vue.min.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/covervid@1.0.0"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" ></script>
+
+  </head>
+  <body>
+
+    
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-primary fixed-top"  id="navbar" v-cloak >
+
+
+
+  <transition name="fade" mode="out-in">
+  <div class="container container-wide" v-if="!search"  style="margin-top: 20px;">
+    <div style="position: absolute; top: -30px; right: 20px; font-size: 10px;" class="hidden-sm-down-bak">
+
+      <a href="" style="font-size: 10px;">English</a>
+      <span class="mr-1 ml-1">|</span>
+      <a href="" style="font-size: 10px;">&#x627;&#x644;&#x639;&#x631;&#x628;&#x64A;&#x629;</a>
+    </div>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+  <a class="navbar-brand" href="index.html">SAFAQAH</a>
+  <div class="flag-selector" style="">
+    <div class="dropdown dropdown-country">
+      <button class="btn btn-secondary btn-xs dropdown-toggle" style="border: none; border-radius: 5px; background: transparent; cursor: pointer;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/ae.svg" style="width: 8px"/> <span style="margin-top: 5px;     font-size: 11px;">UAE</span>
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/bh.svg" style="width: 12px"/> Bahrain</a>
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/kw.svg" style="width: 12px"/> Kuwait</a>
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/om.svg" style="width: 12px"/> Oman</a>
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/qa.svg" style="width: 12px"/> Qatar</a>
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/sa.svg" style="width: 12px"/> Saudi Arabia</a>
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/ae.svg" style="width: 12px"/> UAE</a>
+      </div>
+    </div>
+                      </div>
+  <div class="collapse navbar-collapse" id="navbarColor01">
+
+    <ul class="navbar-nav mr-auto" >
+
+    </ul>
+    <ul class="navbar-nav" >
+
+      <li class="nav-item active dropdown">
+        <a class="nav-link dropdown-toggle" href="categories.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          All Categories
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="search.html">Agriculture <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Building & Construction <span class="text-muted">(2)</span></a>
+          <a class="dropdown-item" href="search.html">Computer, Internet & Technology <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Education <span class="text-muted">(2)</span></a>
+          <a class="dropdown-item" href="search.html">Entertainment & Leisure <span class="text-muted">(2)</span></a>
+          <a class="dropdown-item" href="search.html">Food & Beverage <span class="text-muted">(7)</span></a>
+          <a class="dropdown-item" href="search.html">Hair and Beauty <span class="text-muted">(2)</span></a>
+          <a class="dropdown-item" href="search.html">Health, Medical and Fitness <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Manufacturing <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Real Estate <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Retail <span class="text-muted">(4)</span></a>
+          <a class="dropdown-item" href="search.html">Service <span class="text-muted">(6)</span></a>
+          <a class="dropdown-item" href="search.html">Transportation <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Travel Related <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Wholesale & Distribution <span class="text-muted">(0)</span></a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="how.html">How it works</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pricing.html">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blog.html">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      
+      <li class="nav-item mr-2">
+        <a class="nav-link" href="login.html"><i class="icon-user icons"></i></a>
+      </li>
+      
+      
+      <li class="nav-item">
+        <a  href="edit.html" class="btn btn-primary my-2 my-sm-0">SELL YOUR BUSINESS</a>
+      </li>
+      
+    </ul>
+  </div>
+    </div>
+
+    <div class="container" v-else>
+  <div class="input-group search-bar">
+  <span class="input-group-addon"><i class="icon-magnifier icons"></i></span>
+  <input type="text" class="form-control form-control-lg" placeholder="Search">
+  <span class="input-group-addon" ><a href="" class="text-muted" v-on:click.prevent="hideSearchBar"><i class="icon-close icons"></i></a></span>
+</div>
+    </div>
+    </transition>
+
+</nav>
+
+
+
+
+      
+
+<div class="container-fluid  " >
+
+            <div class="row" style="margin-top: 28px;">
+            <div class="col-5 pl-0 pr-0 hidden-sm-down" style="background: #A3CCFF">
+              <div id="map_canvas"  ></div>
+
+            </div>
+            <div class="col-12 col-md-7" style="overflow-y: scroll; height: calc(100vh - 89px);" id="search">
+
+              <div class="row mt-4">
+              <div class="col-6">
+                <div class="form-group row">
+                    <div class="col-12">
+                      <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon"><i class="icon-magnifier icons"></i></div>
+                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Keyword">
+                      </div>
+                    </div>
+                </div>
+                </div>
+              <div class="col-6">
+                <div class="form-group row">
+                    <div class="col-12">
+                      <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon"><i class="icon-options-vertical icons"></i></div>
+                        <select class=" form-control">
+                          <option selected>Category</option>
+                          <option value="1">Agriculture</option>
+                          <option value="2">Building & Construction</option>
+                          <option value="3">Computer, Internet & Technology</option>
+                        </select>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group row">
+                    <div class="col-12">
+                      <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon"><i class="icon-location-pin icons"></i></div>
+                        <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Location">
+                      </div>
+                    </div>
+                </div>
+                </div>
+              <div class="col-6">
+                <div class="form-group row">
+                    <div class="col-12">
+                      <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                        <div class="input-group-addon"><i class="icon-disc icons"></i></div>
+                        <select class=" form-control">
+  <option selected>Radius</option>
+  <option value="1">50 miles</option>
+  <option value="2">100 miles</option>
+  <option value="3">200 miles</option>
+</select>
+                      </div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-group row">
+                  <div class="col-12">
+                <p class="form-control-static mt-1"><a href="#myModal" data-toggle="modal" data-target="#myModal"><i class="icon-plus icons"></i> Advanced search</a></p>
+
+                </div>
+                </div>
+                </div>
+              <div class="col-6">
+                <button type="submit" class="btn btn-danger btn-block">Search</button>
+
+              </div>
+              </div>
+<hr class="mb-1 mt-1"/>
+<div class="row mt-0">
+  <div class="col-12">
+
+    <div class="d-flex justify-content-end">
+  <div class="mr-auto p-0 pt-2">
+    <div class="dropdown">
+      <a class="btn btn-secondary dropdown-toggle" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Sort
+      </a>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <a class="dropdown-item" href="#">Newest first</a>
+        <a class="dropdown-item" href="#">Oldest First</a>
+        <a class="dropdown-item" href="#">Free</a>
+        <a class="dropdown-item" href="#">Call For Info</a>
+        <a class="dropdown-item" href="#">Discounted</a>
+      </div>
+    </div>
+  </div>
+  <div class="p-2">  <div class="btn-group ml-auto" role="group" aria-label="Basic example">
+    <button type="button" class="btn btn-secondary" :class="{ active: currentView == 'list' }" @click.prevent="selectView('list')"><i class="icon-list icons"></i></button>
+    <button type="button" class="btn btn-secondary" :class="{ active:  currentView == 'grid' }" @click.prevent="selectView('grid')"><i class="icon-grid icons"></i></button>
+  </div></div>
+</div>
+
+
+</div>
+  <div class="col-6">
+
+
+</div>
+</div>
+<div class="row mt-1" v-if="currentView == 'list'">
+  
+  <div class="col-12">
+
+  <div class="card card-block mb-3 ">
+     <div class="row listing-row">
+        <div class="col-sm-3">
+           <a href="project.html" class="thumbnail"><img alt="" src="https://unsplash.it/656/435?image=6" class="img-fluid"></a><br>
+        </div>
+        <div class="col-sm-9">
+          <h4><a href="project.html" style="text-transform: capitalize">architect frictionless supply-chains</a></h4>
+
+           <h5 style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html">£15,000,000</a></h5>
+           <p style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html"></a></p>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+           <p>Built in the 1920 s, this imposing detached five bedroom home retains many original Arts &amp; Crafts features, such as the doors and fireplace surrounds which are characterised by simple craftsmanship and romantic decoration. Sitting within approximately acre, this three storey home wel...</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-12">
+
+  <div class="card card-block mb-3 ">
+     <div class="row listing-row">
+        <div class="col-sm-3">
+           <a href="project.html" class="thumbnail"><img alt="" src="https://unsplash.it/656/435?image=12" class="img-fluid"></a><br>
+        </div>
+        <div class="col-sm-9">
+          <h4><a href="project.html" style="text-transform: capitalize">iterate plug-and-play metrics</a></h4>
+
+           <h5 style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html">£15,000,000</a></h5>
+           <p style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html"></a></p>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+           <p>Built in the 1920 s, this imposing detached five bedroom home retains many original Arts &amp; Crafts features, such as the doors and fireplace surrounds which are characterised by simple craftsmanship and romantic decoration. Sitting within approximately acre, this three storey home wel...</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-12">
+
+  <div class="card card-block mb-3 ">
+     <div class="row listing-row">
+        <div class="col-sm-3">
+           <a href="project.html" class="thumbnail"><img alt="" src="https://unsplash.it/656/435?image=18" class="img-fluid"></a><br>
+        </div>
+        <div class="col-sm-9">
+          <h4><a href="project.html" style="text-transform: capitalize">architect best-of-breed niches</a></h4>
+
+           <h5 style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html">£15,000,000</a></h5>
+           <p style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html"></a></p>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+           <p>Built in the 1920 s, this imposing detached five bedroom home retains many original Arts &amp; Crafts features, such as the doors and fireplace surrounds which are characterised by simple craftsmanship and romantic decoration. Sitting within approximately acre, this three storey home wel...</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-12">
+
+  <div class="card card-block mb-3 ">
+     <div class="row listing-row">
+        <div class="col-sm-3">
+           <a href="project.html" class="thumbnail"><img alt="" src="https://unsplash.it/656/435?image=24" class="img-fluid"></a><br>
+        </div>
+        <div class="col-sm-9">
+          <h4><a href="project.html" style="text-transform: capitalize">iterate impactful interfaces</a></h4>
+
+           <h5 style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html">£15,000,000</a></h5>
+           <p style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html"></a></p>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+           <p>Built in the 1920 s, this imposing detached five bedroom home retains many original Arts &amp; Crafts features, such as the doors and fireplace surrounds which are characterised by simple craftsmanship and romantic decoration. Sitting within approximately acre, this three storey home wel...</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-12">
+
+  <div class="card card-block mb-3 ">
+     <div class="row listing-row">
+        <div class="col-sm-3">
+           <a href="project.html" class="thumbnail"><img alt="" src="https://unsplash.it/656/435?image=30" class="img-fluid"></a><br>
+        </div>
+        <div class="col-sm-9">
+          <h4><a href="project.html" style="text-transform: capitalize">envisioneer viral functionalities</a></h4>
+
+           <h5 style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html">£15,000,000</a></h5>
+           <p style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html"></a></p>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+           <p>Built in the 1920 s, this imposing detached five bedroom home retains many original Arts &amp; Crafts features, such as the doors and fireplace surrounds which are characterised by simple craftsmanship and romantic decoration. Sitting within approximately acre, this three storey home wel...</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-12">
+
+  <div class="card card-block mb-3 ">
+     <div class="row listing-row">
+        <div class="col-sm-3">
+           <a href="project.html" class="thumbnail"><img alt="" src="https://unsplash.it/656/435?image=36" class="img-fluid"></a><br>
+        </div>
+        <div class="col-sm-9">
+          <h4><a href="project.html" style="text-transform: capitalize">incubate next-generation platforms</a></h4>
+
+           <h5 style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html">£15,000,000</a></h5>
+           <p style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html"></a></p>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+           <p>Built in the 1920 s, this imposing detached five bedroom home retains many original Arts &amp; Crafts features, such as the doors and fireplace surrounds which are characterised by simple craftsmanship and romantic decoration. Sitting within approximately acre, this three storey home wel...</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-12">
+
+  <div class="card card-block mb-3 ">
+     <div class="row listing-row">
+        <div class="col-sm-3">
+           <a href="project.html" class="thumbnail"><img alt="" src="https://unsplash.it/656/435?image=42" class="img-fluid"></a><br>
+        </div>
+        <div class="col-sm-9">
+          <h4><a href="project.html" style="text-transform: capitalize">grow strategic schemas</a></h4>
+
+           <h5 style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html">£15,000,000</a></h5>
+           <p style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html"></a></p>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+           <p>Built in the 1920 s, this imposing detached five bedroom home retains many original Arts &amp; Crafts features, such as the doors and fireplace surrounds which are characterised by simple craftsmanship and romantic decoration. Sitting within approximately acre, this three storey home wel...</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-12">
+
+  <div class="card card-block mb-3 ">
+     <div class="row listing-row">
+        <div class="col-sm-3">
+           <a href="project.html" class="thumbnail"><img alt="" src="https://unsplash.it/656/435?image=48" class="img-fluid"></a><br>
+        </div>
+        <div class="col-sm-9">
+          <h4><a href="project.html" style="text-transform: capitalize">incubate plug-and-play vortals</a></h4>
+
+           <h5 style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html">£15,000,000</a></h5>
+           <p style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html"></a></p>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+           <p>Built in the 1920 s, this imposing detached five bedroom home retains many original Arts &amp; Crafts features, such as the doors and fireplace surrounds which are characterised by simple craftsmanship and romantic decoration. Sitting within approximately acre, this three storey home wel...</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-12">
+
+  <div class="card card-block mb-3 ">
+     <div class="row listing-row">
+        <div class="col-sm-3">
+           <a href="project.html" class="thumbnail"><img alt="" src="https://unsplash.it/656/435?image=54" class="img-fluid"></a><br>
+        </div>
+        <div class="col-sm-9">
+          <h4><a href="project.html" style="text-transform: capitalize">recontextualize 24/7 portals</a></h4>
+
+           <h5 style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html">£15,000,000</a></h5>
+           <p style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html"></a></p>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+           <p>Built in the 1920 s, this imposing detached five bedroom home retains many original Arts &amp; Crafts features, such as the doors and fireplace surrounds which are characterised by simple craftsmanship and romantic decoration. Sitting within approximately acre, this three storey home wel...</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-12">
+
+  <div class="card card-block mb-3 ">
+     <div class="row listing-row">
+        <div class="col-sm-3">
+           <a href="project.html" class="thumbnail"><img alt="" src="https://unsplash.it/656/435?image=60" class="img-fluid"></a><br>
+        </div>
+        <div class="col-sm-9">
+          <h4><a href="project.html" style="text-transform: capitalize">e-enable mission-critical communities</a></h4>
+
+           <h5 style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html">£15,000,000</a></h5>
+           <p style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html"></a></p>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+           <p>Built in the 1920 s, this imposing detached five bedroom home retains many original Arts &amp; Crafts features, such as the doors and fireplace surrounds which are characterised by simple craftsmanship and romantic decoration. Sitting within approximately acre, this three storey home wel...</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-12">
+
+  <div class="card card-block mb-3 ">
+     <div class="row listing-row">
+        <div class="col-sm-3">
+           <a href="project.html" class="thumbnail"><img alt="" src="https://unsplash.it/656/435?image=66" class="img-fluid"></a><br>
+        </div>
+        <div class="col-sm-9">
+          <h4><a href="project.html" style="text-transform: capitalize">reinvent back-end architectures</a></h4>
+
+           <h5 style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html">£15,000,000</a></h5>
+           <p style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html"></a></p>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+           <p>Built in the 1920 s, this imposing detached five bedroom home retains many original Arts &amp; Crafts features, such as the doors and fireplace surrounds which are characterised by simple craftsmanship and romantic decoration. Sitting within approximately acre, this three storey home wel...</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-12">
+
+  <div class="card card-block mb-3 ">
+     <div class="row listing-row">
+        <div class="col-sm-3">
+           <a href="project.html" class="thumbnail"><img alt="" src="https://unsplash.it/656/435?image=72" class="img-fluid"></a><br>
+        </div>
+        <div class="col-sm-9">
+          <h4><a href="project.html" style="text-transform: capitalize">embrace B2B infrastructures</a></h4>
+
+           <h5 style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html">£15,000,000</a></h5>
+           <p style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html"></a></p>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+           <p>Built in the 1920 s, this imposing detached five bedroom home retains many original Arts &amp; Crafts features, such as the doors and fireplace surrounds which are characterised by simple craftsmanship and romantic decoration. Sitting within approximately acre, this three storey home wel...</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-12">
+
+  <div class="card card-block mb-3 ">
+     <div class="row listing-row">
+        <div class="col-sm-3">
+           <a href="project.html" class="thumbnail"><img alt="" src="https://unsplash.it/656/435?image=78" class="img-fluid"></a><br>
+        </div>
+        <div class="col-sm-9">
+          <h4><a href="project.html" style="text-transform: capitalize">empower ubiquitous relationships</a></h4>
+
+           <h5 style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html">£15,000,000</a></h5>
+           <p style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html"></a></p>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+           <p>Built in the 1920 s, this imposing detached five bedroom home retains many original Arts &amp; Crafts features, such as the doors and fireplace surrounds which are characterised by simple craftsmanship and romantic decoration. Sitting within approximately acre, this three storey home wel...</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-12">
+
+  <div class="card card-block mb-3 ">
+     <div class="row listing-row">
+        <div class="col-sm-3">
+           <a href="project.html" class="thumbnail"><img alt="" src="https://unsplash.it/656/435?image=84" class="img-fluid"></a><br>
+        </div>
+        <div class="col-sm-9">
+          <h4><a href="project.html" style="text-transform: capitalize">extend robust applications</a></h4>
+
+           <h5 style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html">£15,000,000</a></h5>
+           <p style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html"></a></p>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+           <p>Built in the 1920 s, this imposing detached five bedroom home retains many original Arts &amp; Crafts features, such as the doors and fireplace surrounds which are characterised by simple craftsmanship and romantic decoration. Sitting within approximately acre, this three storey home wel...</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-12">
+
+  <div class="card card-block mb-3 ">
+     <div class="row listing-row">
+        <div class="col-sm-3">
+           <a href="project.html" class="thumbnail"><img alt="" src="https://unsplash.it/656/435?image=90" class="img-fluid"></a><br>
+        </div>
+        <div class="col-sm-9">
+          <h4><a href="project.html" style="text-transform: capitalize">productize open-source networks</a></h4>
+
+           <h5 style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html">£15,000,000</a></h5>
+           <p style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html"></a></p>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+           <p>Built in the 1920 s, this imposing detached five bedroom home retains many original Arts &amp; Crafts features, such as the doors and fireplace surrounds which are characterised by simple craftsmanship and romantic decoration. Sitting within approximately acre, this three storey home wel...</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-12">
+
+  <div class="card card-block mb-3 ">
+     <div class="row listing-row">
+        <div class="col-sm-3">
+           <a href="project.html" class="thumbnail"><img alt="" src="https://unsplash.it/656/435?image=96" class="img-fluid"></a><br>
+        </div>
+        <div class="col-sm-9">
+          <h4><a href="project.html" style="text-transform: capitalize">strategize transparent metrics</a></h4>
+
+           <h5 style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html">£15,000,000</a></h5>
+           <p style="margin-top: 0px; margin-bottom: 10px;"><a href="project.html"></a></p>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+           <p>Built in the 1920 s, this imposing detached five bedroom home retains many original Arts &amp; Crafts features, such as the doors and fireplace surrounds which are characterised by simple craftsmanship and romantic decoration. Sitting within approximately acre, this three storey home wel...</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+
+
+            </div>
+<div class="row mt-1" v-if="currentView == 'grid'">
+  
+  <div class="col-6 col-lg-4">
+
+  <div class="card mb-4">
+     <a href="project.html" class="p-0"><img alt="" src="https://unsplash.it/656/435?image=6" class="img-fluid"></a>
+     <div class="card-block p-0 mt-1">
+        <div class="col-lg-12">
+          <h2 class="mt-1 mb-0"><a href="project.html" class="mb-0 grid-project-title" style="">architect frictionless supply-chains</a></h2>
+           <a href="project.html" class="mt-1 mb-1" style="font-weight: 400; color: rgb(0, 114, 0); font-size: 18px;">£15,000 </a>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-6 col-lg-4">
+
+  <div class="card mb-4">
+     <a href="project.html" class="p-0"><img alt="" src="https://unsplash.it/656/435?image=12" class="img-fluid"></a>
+     <div class="card-block p-0 mt-1">
+        <div class="col-lg-12">
+          <h2 class="mt-1 mb-0"><a href="project.html" class="mb-0 grid-project-title" style="">iterate plug-and-play metrics</a></h2>
+           <a href="project.html" class="mt-1 mb-1" style="font-weight: 400; color: rgb(0, 114, 0); font-size: 18px;">£15,000 </a>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-6 col-lg-4">
+
+  <div class="card mb-4">
+     <a href="project.html" class="p-0"><img alt="" src="https://unsplash.it/656/435?image=18" class="img-fluid"></a>
+     <div class="card-block p-0 mt-1">
+        <div class="col-lg-12">
+          <h2 class="mt-1 mb-0"><a href="project.html" class="mb-0 grid-project-title" style="">architect best-of-breed niches</a></h2>
+           <a href="project.html" class="mt-1 mb-1" style="font-weight: 400; color: rgb(0, 114, 0); font-size: 18px;">£15,000 </a>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-6 col-lg-4">
+
+  <div class="card mb-4">
+     <a href="project.html" class="p-0"><img alt="" src="https://unsplash.it/656/435?image=24" class="img-fluid"></a>
+     <div class="card-block p-0 mt-1">
+        <div class="col-lg-12">
+          <h2 class="mt-1 mb-0"><a href="project.html" class="mb-0 grid-project-title" style="">iterate impactful interfaces</a></h2>
+           <a href="project.html" class="mt-1 mb-1" style="font-weight: 400; color: rgb(0, 114, 0); font-size: 18px;">£15,000 </a>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-6 col-lg-4">
+
+  <div class="card mb-4">
+     <a href="project.html" class="p-0"><img alt="" src="https://unsplash.it/656/435?image=30" class="img-fluid"></a>
+     <div class="card-block p-0 mt-1">
+        <div class="col-lg-12">
+          <h2 class="mt-1 mb-0"><a href="project.html" class="mb-0 grid-project-title" style="">envisioneer viral functionalities</a></h2>
+           <a href="project.html" class="mt-1 mb-1" style="font-weight: 400; color: rgb(0, 114, 0); font-size: 18px;">£15,000 </a>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-6 col-lg-4">
+
+  <div class="card mb-4">
+     <a href="project.html" class="p-0"><img alt="" src="https://unsplash.it/656/435?image=36" class="img-fluid"></a>
+     <div class="card-block p-0 mt-1">
+        <div class="col-lg-12">
+          <h2 class="mt-1 mb-0"><a href="project.html" class="mb-0 grid-project-title" style="">incubate next-generation platforms</a></h2>
+           <a href="project.html" class="mt-1 mb-1" style="font-weight: 400; color: rgb(0, 114, 0); font-size: 18px;">£15,000 </a>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-6 col-lg-4">
+
+  <div class="card mb-4">
+     <a href="project.html" class="p-0"><img alt="" src="https://unsplash.it/656/435?image=42" class="img-fluid"></a>
+     <div class="card-block p-0 mt-1">
+        <div class="col-lg-12">
+          <h2 class="mt-1 mb-0"><a href="project.html" class="mb-0 grid-project-title" style="">grow strategic schemas</a></h2>
+           <a href="project.html" class="mt-1 mb-1" style="font-weight: 400; color: rgb(0, 114, 0); font-size: 18px;">£15,000 </a>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-6 col-lg-4">
+
+  <div class="card mb-4">
+     <a href="project.html" class="p-0"><img alt="" src="https://unsplash.it/656/435?image=48" class="img-fluid"></a>
+     <div class="card-block p-0 mt-1">
+        <div class="col-lg-12">
+          <h2 class="mt-1 mb-0"><a href="project.html" class="mb-0 grid-project-title" style="">incubate plug-and-play vortals</a></h2>
+           <a href="project.html" class="mt-1 mb-1" style="font-weight: 400; color: rgb(0, 114, 0); font-size: 18px;">£15,000 </a>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-6 col-lg-4">
+
+  <div class="card mb-4">
+     <a href="project.html" class="p-0"><img alt="" src="https://unsplash.it/656/435?image=54" class="img-fluid"></a>
+     <div class="card-block p-0 mt-1">
+        <div class="col-lg-12">
+          <h2 class="mt-1 mb-0"><a href="project.html" class="mb-0 grid-project-title" style="">recontextualize 24/7 portals</a></h2>
+           <a href="project.html" class="mt-1 mb-1" style="font-weight: 400; color: rgb(0, 114, 0); font-size: 18px;">£15,000 </a>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-6 col-lg-4">
+
+  <div class="card mb-4">
+     <a href="project.html" class="p-0"><img alt="" src="https://unsplash.it/656/435?image=60" class="img-fluid"></a>
+     <div class="card-block p-0 mt-1">
+        <div class="col-lg-12">
+          <h2 class="mt-1 mb-0"><a href="project.html" class="mb-0 grid-project-title" style="">e-enable mission-critical communities</a></h2>
+           <a href="project.html" class="mt-1 mb-1" style="font-weight: 400; color: rgb(0, 114, 0); font-size: 18px;">£15,000 </a>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-6 col-lg-4">
+
+  <div class="card mb-4">
+     <a href="project.html" class="p-0"><img alt="" src="https://unsplash.it/656/435?image=66" class="img-fluid"></a>
+     <div class="card-block p-0 mt-1">
+        <div class="col-lg-12">
+          <h2 class="mt-1 mb-0"><a href="project.html" class="mb-0 grid-project-title" style="">reinvent back-end architectures</a></h2>
+           <a href="project.html" class="mt-1 mb-1" style="font-weight: 400; color: rgb(0, 114, 0); font-size: 18px;">£15,000 </a>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-6 col-lg-4">
+
+  <div class="card mb-4">
+     <a href="project.html" class="p-0"><img alt="" src="https://unsplash.it/656/435?image=72" class="img-fluid"></a>
+     <div class="card-block p-0 mt-1">
+        <div class="col-lg-12">
+          <h2 class="mt-1 mb-0"><a href="project.html" class="mb-0 grid-project-title" style="">embrace B2B infrastructures</a></h2>
+           <a href="project.html" class="mt-1 mb-1" style="font-weight: 400; color: rgb(0, 114, 0); font-size: 18px;">£15,000 </a>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-6 col-lg-4">
+
+  <div class="card mb-4">
+     <a href="project.html" class="p-0"><img alt="" src="https://unsplash.it/656/435?image=78" class="img-fluid"></a>
+     <div class="card-block p-0 mt-1">
+        <div class="col-lg-12">
+          <h2 class="mt-1 mb-0"><a href="project.html" class="mb-0 grid-project-title" style="">empower ubiquitous relationships</a></h2>
+           <a href="project.html" class="mt-1 mb-1" style="font-weight: 400; color: rgb(0, 114, 0); font-size: 18px;">£15,000 </a>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-6 col-lg-4">
+
+  <div class="card mb-4">
+     <a href="project.html" class="p-0"><img alt="" src="https://unsplash.it/656/435?image=84" class="img-fluid"></a>
+     <div class="card-block p-0 mt-1">
+        <div class="col-lg-12">
+          <h2 class="mt-1 mb-0"><a href="project.html" class="mb-0 grid-project-title" style="">extend robust applications</a></h2>
+           <a href="project.html" class="mt-1 mb-1" style="font-weight: 400; color: rgb(0, 114, 0); font-size: 18px;">£15,000 </a>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-6 col-lg-4">
+
+  <div class="card mb-4">
+     <a href="project.html" class="p-0"><img alt="" src="https://unsplash.it/656/435?image=90" class="img-fluid"></a>
+     <div class="card-block p-0 mt-1">
+        <div class="col-lg-12">
+          <h2 class="mt-1 mb-0"><a href="project.html" class="mb-0 grid-project-title" style="">productize open-source networks</a></h2>
+           <a href="project.html" class="mt-1 mb-1" style="font-weight: 400; color: rgb(0, 114, 0); font-size: 18px;">£15,000 </a>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+  <div class="col-6 col-lg-4">
+
+  <div class="card mb-4">
+     <a href="project.html" class="p-0"><img alt="" src="https://unsplash.it/656/435?image=96" class="img-fluid"></a>
+     <div class="card-block p-0 mt-1">
+        <div class="col-lg-12">
+          <h2 class="mt-1 mb-0"><a href="project.html" class="mb-0 grid-project-title" style="">strategize transparent metrics</a></h2>
+           <a href="project.html" class="mt-1 mb-1" style="font-weight: 400; color: rgb(0, 114, 0); font-size: 18px;">£15,000 </a>
+           <p></p>
+           <p class="text-muted pt-0">Posted by Jane Doe</p>
+        </div>
+     </div>
+  </div>
+  </div>
+  
+
+
+            </div>
+            <hr />
+            <nav aria-label="Page navigation example">
+              <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                  <a class="page-link" href="#" tabindex="-1">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                <li class="page-item"><a class="page-link" href="#">6</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
+
+            </div>
+
+            </div>
+
+
+
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" style="max-height: 70vh; overflow-y: scroll">
+        <form>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="exampleSelect1">Example select</label>
+            <select class="form-control" id="exampleSelect1">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleSelect2">Example multiple select</label>
+            <select multiple class="form-control" id="exampleSelect2">
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="exampleTextarea">Example textarea</label>
+            <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputFile">File input</label>
+            <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+            <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
+          </div>
+          <fieldset class="form-group">
+            <legend>Radio buttons</legend>
+            <div class="form-check">
+              <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                Option one is this and that&mdash;be sure to include why it's great
+              </label>
+            </div>
+            <div class="form-check">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
+                Option two can be something else and selecting it will deselect option one
+              </label>
+            </div>
+            <div class="form-check disabled">
+            <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+                Option three is disabled
+              </label>
+            </div>
+          </fieldset>
+          <div class="form-check">
+            <label class="form-check-label">
+              <input type="checkbox" class="form-check-input">
+              Check me out
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style type="text/css">
+  #map_canvas { height: 100vh; width: 100%; margin-top: -88px;  }
+    #map_canvas img {
+max-width: none;
+
+}
+
+</style>
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyB0GyX-SVDaT9pEde-p2HMtgb4YgkKCzMM"></script>
+<script type="text/javascript">
+  function initialize() {
+    var myLatlng = new google.maps.LatLng(-33.864256,151.212542);
+    var myOptions = {
+      zoom: 11,
+      center: myLatlng,
+      mapTypeId: google.maps.MapTypeId.ROADMAP
+    }
+    var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+  }
+initialize();
+
+new Vue({
+  el: '#search',
+  data: {
+   currentView: 'grid',
+   message: 'hello'
+ },
+ methods: {
+  selectView: function (view) {
+    this.currentView = view;
+  }
+}
+})
+
+
+</script>
+
+
+
+
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+
+	<script>
+		var eventTime = moment().add(8, 'hours'); // Timestamp - Sun, 21 Apr 2013 13:00:00 GMT
+		var currentTime = 1366547400; // Timestamp - Sun, 21 Apr 2013 12:30:00 GMT
+		var diffTime = eventTime - currentTime;
+		var duration = moment.duration(diffTime*1000, 'milliseconds');
+		var interval = 1000;
+
+		setInterval(function(){
+		  duration = moment.duration(duration - interval, 'milliseconds');
+			$('#current_time').text(moment().format('MMMM Do YYYY, h:mma'));
+		}, interval);
+	</script>
+  </body>
+</html>
+
+    <script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='//www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','');ga('send','pageview');
+</script>
+
+    <script>
+var app = new Vue({
+  el: '#navbar',
+  data: {
+    search: false
+  },
+  methods: {
+    showSearchBar: function () {
+      this.search = true;
+    },
+    hideSearchBar: function () {
+      this.search = false;
+    }
+  }
+})
+</script>
+
+  </body>
+</html>

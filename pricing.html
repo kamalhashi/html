@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SAFAQAH</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.1/vue.min.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/covervid@1.0.0"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" ></script>
+
+  </head>
+  <body>
+
+    
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-primary fixed-top"  id="navbar" v-cloak >
+
+
+
+  <transition name="fade" mode="out-in">
+  <div class="container " v-if="!search"  style="margin-top: 20px;">
+    <div style="position: absolute; top: -30px; right: 20px; font-size: 10px;" class="hidden-sm-down-bak">
+
+      <a href="" style="font-size: 10px;">English</a>
+      <span class="mr-1 ml-1">|</span>
+      <a href="" style="font-size: 10px;">&#x627;&#x644;&#x639;&#x631;&#x628;&#x64A;&#x629;</a>
+    </div>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+  <a class="navbar-brand" href="index.html">SAFAQAH</a>
+  <div class="flag-selector" style="">
+    <div class="dropdown dropdown-country">
+      <button class="btn btn-secondary btn-xs dropdown-toggle" style="border: none; border-radius: 5px; background: transparent; cursor: pointer;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/ae.svg" style="width: 8px"/> <span style="margin-top: 5px;     font-size: 11px;">UAE</span>
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/bh.svg" style="width: 12px"/> Bahrain</a>
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/kw.svg" style="width: 12px"/> Kuwait</a>
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/om.svg" style="width: 12px"/> Oman</a>
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/qa.svg" style="width: 12px"/> Qatar</a>
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/sa.svg" style="width: 12px"/> Saudi Arabia</a>
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/ae.svg" style="width: 12px"/> UAE</a>
+      </div>
+    </div>
+                      </div>
+  <div class="collapse navbar-collapse" id="navbarColor01">
+
+    <ul class="navbar-nav mr-auto" >
+
+    </ul>
+    <ul class="navbar-nav" >
+
+      <li class="nav-item active dropdown">
+        <a class="nav-link dropdown-toggle" href="categories.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          All Categories
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="search.html">Agriculture <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Building & Construction <span class="text-muted">(2)</span></a>
+          <a class="dropdown-item" href="search.html">Computer, Internet & Technology <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Education <span class="text-muted">(2)</span></a>
+          <a class="dropdown-item" href="search.html">Entertainment & Leisure <span class="text-muted">(2)</span></a>
+          <a class="dropdown-item" href="search.html">Food & Beverage <span class="text-muted">(7)</span></a>
+          <a class="dropdown-item" href="search.html">Hair and Beauty <span class="text-muted">(2)</span></a>
+          <a class="dropdown-item" href="search.html">Health, Medical and Fitness <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Manufacturing <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Real Estate <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Retail <span class="text-muted">(4)</span></a>
+          <a class="dropdown-item" href="search.html">Service <span class="text-muted">(6)</span></a>
+          <a class="dropdown-item" href="search.html">Transportation <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Travel Related <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Wholesale & Distribution <span class="text-muted">(0)</span></a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="how.html">How it works</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pricing.html">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blog.html">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      
+      <li class="nav-item mr-2">
+        <a class="nav-link" href="login.html"><i class="icon-user icons"></i></a>
+      </li>
+      
+      
+      <li class="nav-item">
+        <a  href="edit.html" class="btn btn-primary my-2 my-sm-0">SELL YOUR BUSINESS</a>
+      </li>
+      
+    </ul>
+  </div>
+    </div>
+
+    <div class="container" v-else>
+  <div class="input-group search-bar">
+  <span class="input-group-addon"><i class="icon-magnifier icons"></i></span>
+  <input type="text" class="form-control form-control-lg" placeholder="Search">
+  <span class="input-group-addon" ><a href="" class="text-muted" v-on:click.prevent="hideSearchBar"><i class="icon-close icons"></i></a></span>
+</div>
+    </div>
+    </transition>
+
+</nav>
+
+
+
+
+      
+<div class="mt-4">
+	<div class="container inner">
+<br />
+		<br />
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<h3>Sell your business and realize your wealth.</h3><br />
+				<h6 class="text-muted">Every month we help 150,000 owners sell their businesses.</h6>
+			</div>
+		</div>
+		<div class="row mb-3 mt-0">
+			<div class="col-md-10 offset-md-1">
+				<div class="row mb-5 mt-5">
+			<div class="col-md-4 text-center">
+				<div class="card mt-3" >
+					<img class="card-img-top img-fluid mr-auto ml-auto mt-4" style="width: 20%" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTcuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8Zz4KCTxwYXRoIGQ9Ik01MDQsNDQwaC0yNFYyMTQuOTY1YzEzLjg2OC0zLjY4MiwyNC0xNi43OTksMjQtMzIuMzI0di0yMi42Mzl2LTAuMDA1di00Ny45OTV2LTAuMDA1VjcyYzAtOC44MjItNy4xNzgtMTYtMTYtMTZIMjQgICBjLTguODIyLDAtMTYsNy4xNzgtMTYsMTZ2MTEwLjY0MmMwLDE1LjUyNSwxMC4xMzIsMjguNjQyLDI0LDMyLjMyNFY0NDBIOGMtNC40MTgsMC04LDMuNTgyLTgsOHMzLjU4Miw4LDgsOGgzMDRoMTEyaDgwICAgYzQuNDE4LDAsOC0zLjU4Miw4LThTNTA4LjQxOCw0NDAsNTA0LDQ0MHogTTQ4LDIxNS4wMDJjNS4yMDQtMS4zMzIsMTAuMDA1LTMuOTc0LDE0LjAyNS03Ljc4OSAgIGMwLjY5NC0wLjY1OCwxLjM1NS0xLjM0NiwxLjk4My0yLjA2MUM2OS44NzYsMjExLjgwMSw3OC40NTcsMjE2LDg4LDIxNmM5LjU0NywwLDE4LjEzMi00LjIwMywyNC0xMC44NTUgICBjNS44NjgsNi42NTIsMTQuNDUzLDEwLjg1NSwyNCwxMC44NTVzMTguMTMyLTQuMjAzLDI0LTEwLjg1NWM1Ljg2OCw2LjY1MiwxNC40NTMsMTAuODU1LDI0LDEwLjg1NXMxOC4xMzItNC4yMDMsMjQtMTAuODU1ICAgYzUuODY4LDYuNjUyLDE0LjQ1MywxMC44NTUsMjQsMTAuODU1czE4LjEzMi00LjIwMywyNC0xMC44NTVjNS44NjgsNi42NTIsMTQuNDUzLDEwLjg1NSwyNCwxMC44NTVzMTguMTMyLTQuMjAzLDI0LTEwLjg1NSAgIGMwLjEyNCwwLjE0MSwwLjI1NywwLjI3NCwwLjM4MywwLjQxM2MtMC4yNDcsMC43NzEtMC4zODMsMS41OS0wLjM4MywyLjQ0M3Y0OHYxMjBINDhWMjE1LjAwMnogTTQzMiwyNTZ2LTQxLjAyMyAgIGM2LjI4LTEuNjIzLDExLjgyMy01LjEsMTUuOTkyLTkuODIzYzAuNjI4LDAuNzE1LDEuMjg5LDEuNDAyLDEuOTgzLDIuMDYxYzQuMDIsMy44MTQsOC44MjMsNi40NSwxNC4wMjUsNy43ODJWMzc2aC0zMlYyNTZ6ICAgIE00NzIuODcyLDE5OS45NzdjLTQuNDQ1LDAuMjQzLTguNjY5LTEuMzE4LTExLjg4My00LjM2OEM0NTcuNzcxLDE5Mi41NTYsNDU2LDE4OC40MzMsNDU2LDE4NHYtNC42ODZsMjAuMTA0LDIwLjEwNCAgIEM0NzUuMDYyLDE5OS43MjIsNDczLjk4MiwxOTkuOTE4LDQ3Mi44NzIsMTk5Ljk3N3ogTTQ1NiwxNTYuNjg2di0yNS4zNzJsMzIsMzJ2MTkuMzI4YzAsMS44MjUtMC4yODIsMy41OTEtMC43ODQsNS4yNjEgICBMNDU2LDE1Ni42ODZ6IE00ODgsMTQwLjY4NmwtMzItMzJWODMuMzE0bDMyLDMyVjE0MC42ODZ6IE00NDAsMTExLjk5OHYwLjAwNXY0Ny45OTV2MC4wMDVWMTg0YzAsOC44MjItNy4xNzgsMTYtMTYsMTYgICBzLTE2LTcuMTc4LTE2LTE2di0yMy45OTh2LTAuMDA1di00Ny45OTV2LTAuMDA1VjcyaDMyVjExMS45OTh6IE0zNjAsMTU2LjY4NnYtMjUuMzcybDMyLDMyVjE4NGMwLDEuNDI5LTAuMjA2LDIuODA4LTAuNTU5LDQuMTI3ICAgTDM2MCwxNTYuNjg2eiBNMzkyLDE0MC42ODZsLTMyLTMyVjgzLjMxNGwzMiwzMlYxNDAuNjg2eiBNMzYwLDE3OS4zMTRsMjAuMTI3LDIwLjEyN0MzNzguODA4LDE5OS43OTQsMzc3LjQyOSwyMDAsMzc2LDIwMCAgIGMtOC44MjIsMC0xNi03LjE3OC0xNi0xNlYxNzkuMzE0eiBNMzkyLDkyLjY4NkwzNzEuMzE0LDcySDM5MlY5Mi42ODZ6IE0zNDQsMTExLjk5OHYwLjAwNXY0Ny45OTV2MC4wMDVWMTg0ICAgYzAsOC44MjItNy4xNzgsMTYtMTYsMTZzLTE2LTcuMTc4LTE2LTE2di0yMy45OTh2LTAuMDA1di00Ny45OTV2LTAuMDA1VjcyaDMyVjExMS45OTh6IE0yNjQsMTU2LjY4NnYtMjUuMzcybDMyLDMyVjE4NCAgIGMwLDEuNDI5LTAuMjA2LDIuODA4LTAuNTU5LDQuMTI3TDI2NCwxNTYuNjg2eiBNMjk2LDE0MC42ODZsLTMyLTMyVjgzLjMxNGwzMiwzMlYxNDAuNjg2eiBNMjY0LDE3OS4zMTRsMjAuMTI3LDIwLjEyNyAgIEMyODIuODA4LDE5OS43OTQsMjgxLjQyOSwyMDAsMjgwLDIwMGMtOC44MjIsMC0xNi03LjE3OC0xNi0xNlYxNzkuMzE0eiBNMjk2LDkyLjY4NkwyNzUuMzE0LDcySDI5NlY5Mi42ODZ6IE0yNDgsMTExLjk5OHYwLjAwNSAgIHY0Ny45OTV2MC4wMDVWMTg0YzAsOC44MjItNy4xNzgsMTYtMTYsMTZzLTE2LTcuMTc4LTE2LTE2di0yMy45OTh2LTAuMDA1di00Ny45OTV2LTAuMDA1VjcyaDMyVjExMS45OTh6IE0xNjgsMTU2LjY4NnYtMjUuMzcyICAgbDMyLDMyVjE4NGMwLDEuNDI5LTAuMjA2LDIuODA4LTAuNTU5LDQuMTI3TDE2OCwxNTYuNjg2eiBNMjAwLDE0MC42ODZsLTMyLTMyVjgzLjMxNGwzMiwzMlYxNDAuNjg2eiBNMTY4LDE3OS4zMTRsMjAuMTI3LDIwLjEyNyAgIEMxODYuODA4LDE5OS43OTQsMTg1LjQyOSwyMDAsMTg0LDIwMGMtOC44MjIsMC0xNi03LjE3OC0xNi0xNlYxNzkuMzE0eiBNMjAwLDkyLjY4NkwxNzkuMzE0LDcySDIwMFY5Mi42ODZ6IE0xNTIsMTExLjk5OHYwLjAwNSAgIHY0Ny45OTV2MC4wMDVWMTg0YzAsOC44MjItNy4xNzgsMTYtMTYsMTZzLTE2LTcuMTc4LTE2LTE2di0yMy45OTh2LTAuMDA1di00Ny45OTV2LTAuMDA1VjcyaDMyVjExMS45OTh6IE0xMDQsMTQwLjY4NmwtMzItMzIgICBWODMuMzE0bDMyLDMyVjE0MC42ODZ6IE0xMDQsMTYzLjMxNFYxODRjMCwxLjQyOS0wLjIwNiwyLjgwOC0wLjU1OSw0LjEyN0w3MiwxNTYuNjg2di0yNS4zNzJMMTA0LDE2My4zMTR6IE03MiwxNzkuMzE0ICAgbDIwLjEyNywyMC4xMjdDOTAuODA4LDE5OS43OTQsODkuNDI5LDIwMCw4OCwyMDBjLTguODIyLDAtMTYtNy4xNzgtMTYtMTZWMTc5LjMxNHogTTEwNCw5Mi42ODZMODMuMzE0LDcySDEwNFY5Mi42ODZ6ICAgIE0zMjAsMjE0Ljk3N2MyLjU1OSwwLjY2MSw1LjIzNywxLjAyMyw4LDEuMDIzYzkuNTQ3LDAsMTguMTMyLTQuMjAzLDI0LTEwLjg1NWM1Ljg2OCw2LjY1MiwxNC40NTMsMTAuODU1LDI0LDEwLjg1NSAgIHMxOC4xMzItNC4yMDMsMjQtMTAuODU1YzQuMTcsNC43MjgsOS43MTYsOC4yMDgsMTYsOS44MzJWMjQ4aC05NlYyMTQuOTc3eiBNNDMyLDM5MmgzMnYxNmgtOGMtNC40MTgsMC04LDMuNTgyLTgsOHMzLjU4Miw4LDgsOGg4ICAgdjE2aC0zMlYzOTJ6IE00ODgsOTIuNjg2TDQ2Ny4zMTQsNzJINDg4VjkyLjY4NnogTTI0LDE4Mi42NDJWNzJoMzJ2MzkuOTk4djAuMDA1djQ3Ljk5NXYwLjAwNVYxODQgICBjMCw0LjQzMy0xLjc3MSw4LjU1Ni00Ljk4OSwxMS42MDhjLTMuMjE0LDMuMDQ5LTcuNDM4LDQuNjA3LTExLjg4Myw0LjM2OEMzMC43ODYsMTk5LjU0LDI0LDE5MS43NjQsMjQsMTgyLjY0MnogTTQ4LDQyNGgyMzIgICBjNC40MTgsMCw4LTMuNTgyLDgtOHMtMy41ODItOC04LThINDh2LTE2aDI1NnY0OEg0OFY0MjR6IE0zMjAsNDQwVjI2NGg5NnYxNzZIMzIweiIgZmlsbD0iIzAwMDAwMCIvPgoJPHBhdGggZD0iTTMzNiwzMzZjLTQuNDE4LDAtOCwzLjU4Mi04LDh2MTZjMCw0LjQxOCwzLjU4Miw4LDgsOHM4LTMuNTgyLDgtOHYtMTZDMzQ0LDMzOS41ODIsMzQwLjQxOCwzMzYsMzM2LDMzNnoiIGZpbGw9IiMwMDAwMDAiLz4KCTxwYXRoIGQ9Ik0xMDkuNjU3LDIzNC4zNDNjLTMuMTI0LTMuMTIzLTguMTg5LTMuMTIzLTExLjMxMywwYy0zLjEyNSwzLjEyNS0zLjEyNSw4LjE4OSwwLDExLjMxNGwxMTIsMTEyICAgYzEuNTYyLDEuNTYyLDMuNjA5LDIuMzQzLDUuNjU3LDIuMzQzczQuMDk1LTAuNzgxLDUuNjU3LTIuMzQzYzMuMTI1LTMuMTI1LDMuMTI1LTguMTg5LDAtMTEuMzE0TDEwOS42NTcsMjM0LjM0M3oiIGZpbGw9IiMwMDAwMDAiLz4KCTxwYXRoIGQ9Ik0xODEuNjU3LDI1OC4zNDNjLTMuMTI0LTMuMTIzLTguMTg5LTMuMTIzLTExLjMxMywwYy0zLjEyNSwzLjEyNS0zLjEyNSw4LjE4OSwwLDExLjMxNGw2NCw2NCAgIGMxLjU2MiwxLjU2MiwzLjYwOSwyLjM0Myw1LjY1NywyLjM0M3M0LjA5NS0wLjc4MSw1LjY1Ny0yLjM0M2MzLjEyNS0zLjEyNSwzLjEyNS04LjE4OSwwLTExLjMxNEwxODEuNjU3LDI1OC4zNDN6IiBmaWxsPSIjMDAwMDAwIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+				  <div class="card-block">
+				    <h4 class="card-title">199 AED</h4>
+				    <p class="card-text">Advertise your businesses for 199AED per month.</p>
+				  </div>
+				  <ul class="list-group list-group-flush">
+						<li class="list-group-item">Online for <strong>&nbsp;30 days</strong></li>
+				    <li class="list-group-item">Access to <span>&nbsp;150,000 buyers</span></li>
+				    <li class="list-group-item">&nbsp;</li>
+				    <li class="list-group-item">&nbsp;</li>
+				  </ul>
+				  <div class="card-block">
+				    <a href="edit.html" class="btn btn-primary card-link">Get started</a>
+				  </div>
+				</div>
+
+			</div>
+			<div class="col-sm-4 text-center">
+				<div class="card mt-3" >
+					<img class="card-img-top img-fluid mr-auto ml-auto mt-4" style="width: 20%" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTcuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8Zz4KCTxwYXRoIGQ9Ik01MDQsNDQwaC0yNFYyMTQuOTY1YzEzLjg2OC0zLjY4MiwyNC0xNi43OTksMjQtMzIuMzI0di0yMi42Mzl2LTAuMDA1di00Ny45OTV2LTAuMDA1VjcyYzAtOC44MjItNy4xNzgtMTYtMTYtMTZIMjQgICBjLTguODIyLDAtMTYsNy4xNzgtMTYsMTZ2MTEwLjY0MmMwLDE1LjUyNSwxMC4xMzIsMjguNjQyLDI0LDMyLjMyNFY0NDBIOGMtNC40MTgsMC04LDMuNTgyLTgsOHMzLjU4Miw4LDgsOGgzMDRoMTEyaDgwICAgYzQuNDE4LDAsOC0zLjU4Miw4LThTNTA4LjQxOCw0NDAsNTA0LDQ0MHogTTQ4LDIxNS4wMDJjNS4yMDQtMS4zMzIsMTAuMDA1LTMuOTc0LDE0LjAyNS03Ljc4OSAgIGMwLjY5NC0wLjY1OCwxLjM1NS0xLjM0NiwxLjk4My0yLjA2MUM2OS44NzYsMjExLjgwMSw3OC40NTcsMjE2LDg4LDIxNmM5LjU0NywwLDE4LjEzMi00LjIwMywyNC0xMC44NTUgICBjNS44NjgsNi42NTIsMTQuNDUzLDEwLjg1NSwyNCwxMC44NTVzMTguMTMyLTQuMjAzLDI0LTEwLjg1NWM1Ljg2OCw2LjY1MiwxNC40NTMsMTAuODU1LDI0LDEwLjg1NXMxOC4xMzItNC4yMDMsMjQtMTAuODU1ICAgYzUuODY4LDYuNjUyLDE0LjQ1MywxMC44NTUsMjQsMTAuODU1czE4LjEzMi00LjIwMywyNC0xMC44NTVjNS44NjgsNi42NTIsMTQuNDUzLDEwLjg1NSwyNCwxMC44NTVzMTguMTMyLTQuMjAzLDI0LTEwLjg1NSAgIGMwLjEyNCwwLjE0MSwwLjI1NywwLjI3NCwwLjM4MywwLjQxM2MtMC4yNDcsMC43NzEtMC4zODMsMS41OS0wLjM4MywyLjQ0M3Y0OHYxMjBINDhWMjE1LjAwMnogTTQzMiwyNTZ2LTQxLjAyMyAgIGM2LjI4LTEuNjIzLDExLjgyMy01LjEsMTUuOTkyLTkuODIzYzAuNjI4LDAuNzE1LDEuMjg5LDEuNDAyLDEuOTgzLDIuMDYxYzQuMDIsMy44MTQsOC44MjMsNi40NSwxNC4wMjUsNy43ODJWMzc2aC0zMlYyNTZ6ICAgIE00NzIuODcyLDE5OS45NzdjLTQuNDQ1LDAuMjQzLTguNjY5LTEuMzE4LTExLjg4My00LjM2OEM0NTcuNzcxLDE5Mi41NTYsNDU2LDE4OC40MzMsNDU2LDE4NHYtNC42ODZsMjAuMTA0LDIwLjEwNCAgIEM0NzUuMDYyLDE5OS43MjIsNDczLjk4MiwxOTkuOTE4LDQ3Mi44NzIsMTk5Ljk3N3ogTTQ1NiwxNTYuNjg2di0yNS4zNzJsMzIsMzJ2MTkuMzI4YzAsMS44MjUtMC4yODIsMy41OTEtMC43ODQsNS4yNjEgICBMNDU2LDE1Ni42ODZ6IE00ODgsMTQwLjY4NmwtMzItMzJWODMuMzE0bDMyLDMyVjE0MC42ODZ6IE00NDAsMTExLjk5OHYwLjAwNXY0Ny45OTV2MC4wMDVWMTg0YzAsOC44MjItNy4xNzgsMTYtMTYsMTYgICBzLTE2LTcuMTc4LTE2LTE2di0yMy45OTh2LTAuMDA1di00Ny45OTV2LTAuMDA1VjcyaDMyVjExMS45OTh6IE0zNjAsMTU2LjY4NnYtMjUuMzcybDMyLDMyVjE4NGMwLDEuNDI5LTAuMjA2LDIuODA4LTAuNTU5LDQuMTI3ICAgTDM2MCwxNTYuNjg2eiBNMzkyLDE0MC42ODZsLTMyLTMyVjgzLjMxNGwzMiwzMlYxNDAuNjg2eiBNMzYwLDE3OS4zMTRsMjAuMTI3LDIwLjEyN0MzNzguODA4LDE5OS43OTQsMzc3LjQyOSwyMDAsMzc2LDIwMCAgIGMtOC44MjIsMC0xNi03LjE3OC0xNi0xNlYxNzkuMzE0eiBNMzkyLDkyLjY4NkwzNzEuMzE0LDcySDM5MlY5Mi42ODZ6IE0zNDQsMTExLjk5OHYwLjAwNXY0Ny45OTV2MC4wMDVWMTg0ICAgYzAsOC44MjItNy4xNzgsMTYtMTYsMTZzLTE2LTcuMTc4LTE2LTE2di0yMy45OTh2LTAuMDA1di00Ny45OTV2LTAuMDA1VjcyaDMyVjExMS45OTh6IE0yNjQsMTU2LjY4NnYtMjUuMzcybDMyLDMyVjE4NCAgIGMwLDEuNDI5LTAuMjA2LDIuODA4LTAuNTU5LDQuMTI3TDI2NCwxNTYuNjg2eiBNMjk2LDE0MC42ODZsLTMyLTMyVjgzLjMxNGwzMiwzMlYxNDAuNjg2eiBNMjY0LDE3OS4zMTRsMjAuMTI3LDIwLjEyNyAgIEMyODIuODA4LDE5OS43OTQsMjgxLjQyOSwyMDAsMjgwLDIwMGMtOC44MjIsMC0xNi03LjE3OC0xNi0xNlYxNzkuMzE0eiBNMjk2LDkyLjY4NkwyNzUuMzE0LDcySDI5NlY5Mi42ODZ6IE0yNDgsMTExLjk5OHYwLjAwNSAgIHY0Ny45OTV2MC4wMDVWMTg0YzAsOC44MjItNy4xNzgsMTYtMTYsMTZzLTE2LTcuMTc4LTE2LTE2di0yMy45OTh2LTAuMDA1di00Ny45OTV2LTAuMDA1VjcyaDMyVjExMS45OTh6IE0xNjgsMTU2LjY4NnYtMjUuMzcyICAgbDMyLDMyVjE4NGMwLDEuNDI5LTAuMjA2LDIuODA4LTAuNTU5LDQuMTI3TDE2OCwxNTYuNjg2eiBNMjAwLDE0MC42ODZsLTMyLTMyVjgzLjMxNGwzMiwzMlYxNDAuNjg2eiBNMTY4LDE3OS4zMTRsMjAuMTI3LDIwLjEyNyAgIEMxODYuODA4LDE5OS43OTQsMTg1LjQyOSwyMDAsMTg0LDIwMGMtOC44MjIsMC0xNi03LjE3OC0xNi0xNlYxNzkuMzE0eiBNMjAwLDkyLjY4NkwxNzkuMzE0LDcySDIwMFY5Mi42ODZ6IE0xNTIsMTExLjk5OHYwLjAwNSAgIHY0Ny45OTV2MC4wMDVWMTg0YzAsOC44MjItNy4xNzgsMTYtMTYsMTZzLTE2LTcuMTc4LTE2LTE2di0yMy45OTh2LTAuMDA1di00Ny45OTV2LTAuMDA1VjcyaDMyVjExMS45OTh6IE0xMDQsMTQwLjY4NmwtMzItMzIgICBWODMuMzE0bDMyLDMyVjE0MC42ODZ6IE0xMDQsMTYzLjMxNFYxODRjMCwxLjQyOS0wLjIwNiwyLjgwOC0wLjU1OSw0LjEyN0w3MiwxNTYuNjg2di0yNS4zNzJMMTA0LDE2My4zMTR6IE03MiwxNzkuMzE0ICAgbDIwLjEyNywyMC4xMjdDOTAuODA4LDE5OS43OTQsODkuNDI5LDIwMCw4OCwyMDBjLTguODIyLDAtMTYtNy4xNzgtMTYtMTZWMTc5LjMxNHogTTEwNCw5Mi42ODZMODMuMzE0LDcySDEwNFY5Mi42ODZ6ICAgIE0zMjAsMjE0Ljk3N2MyLjU1OSwwLjY2MSw1LjIzNywxLjAyMyw4LDEuMDIzYzkuNTQ3LDAsMTguMTMyLTQuMjAzLDI0LTEwLjg1NWM1Ljg2OCw2LjY1MiwxNC40NTMsMTAuODU1LDI0LDEwLjg1NSAgIHMxOC4xMzItNC4yMDMsMjQtMTAuODU1YzQuMTcsNC43MjgsOS43MTYsOC4yMDgsMTYsOS44MzJWMjQ4aC05NlYyMTQuOTc3eiBNNDMyLDM5MmgzMnYxNmgtOGMtNC40MTgsMC04LDMuNTgyLTgsOHMzLjU4Miw4LDgsOGg4ICAgdjE2aC0zMlYzOTJ6IE00ODgsOTIuNjg2TDQ2Ny4zMTQsNzJINDg4VjkyLjY4NnogTTI0LDE4Mi42NDJWNzJoMzJ2MzkuOTk4djAuMDA1djQ3Ljk5NXYwLjAwNVYxODQgICBjMCw0LjQzMy0xLjc3MSw4LjU1Ni00Ljk4OSwxMS42MDhjLTMuMjE0LDMuMDQ5LTcuNDM4LDQuNjA3LTExLjg4Myw0LjM2OEMzMC43ODYsMTk5LjU0LDI0LDE5MS43NjQsMjQsMTgyLjY0MnogTTQ4LDQyNGgyMzIgICBjNC40MTgsMCw4LTMuNTgyLDgtOHMtMy41ODItOC04LThINDh2LTE2aDI1NnY0OEg0OFY0MjR6IE0zMjAsNDQwVjI2NGg5NnYxNzZIMzIweiIgZmlsbD0iIzAwMDAwMCIvPgoJPHBhdGggZD0iTTMzNiwzMzZjLTQuNDE4LDAtOCwzLjU4Mi04LDh2MTZjMCw0LjQxOCwzLjU4Miw4LDgsOHM4LTMuNTgyLDgtOHYtMTZDMzQ0LDMzOS41ODIsMzQwLjQxOCwzMzYsMzM2LDMzNnoiIGZpbGw9IiMwMDAwMDAiLz4KCTxwYXRoIGQ9Ik0xMDkuNjU3LDIzNC4zNDNjLTMuMTI0LTMuMTIzLTguMTg5LTMuMTIzLTExLjMxMywwYy0zLjEyNSwzLjEyNS0zLjEyNSw4LjE4OSwwLDExLjMxNGwxMTIsMTEyICAgYzEuNTYyLDEuNTYyLDMuNjA5LDIuMzQzLDUuNjU3LDIuMzQzczQuMDk1LTAuNzgxLDUuNjU3LTIuMzQzYzMuMTI1LTMuMTI1LDMuMTI1LTguMTg5LDAtMTEuMzE0TDEwOS42NTcsMjM0LjM0M3oiIGZpbGw9IiMwMDAwMDAiLz4KCTxwYXRoIGQ9Ik0xODEuNjU3LDI1OC4zNDNjLTMuMTI0LTMuMTIzLTguMTg5LTMuMTIzLTExLjMxMywwYy0zLjEyNSwzLjEyNS0zLjEyNSw4LjE4OSwwLDExLjMxNGw2NCw2NCAgIGMxLjU2MiwxLjU2MiwzLjYwOSwyLjM0Myw1LjY1NywyLjM0M3M0LjA5NS0wLjc4MSw1LjY1Ny0yLjM0M2MzLjEyNS0zLjEyNSwzLjEyNS04LjE4OSwwLTExLjMxNEwxODEuNjU3LDI1OC4zNDN6IiBmaWxsPSIjMDAwMDAwIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+				  <div class="card-block">
+				    <h4 class="card-title">299 AED</h4>
+						<p class="card-text">Advertise your businesses for 100AED per month.</p>
+				  </div>
+				  <ul class="list-group list-group-flush">
+						<li class="list-group-item" style="    background: #fff7e3;color: #b0a996;">Online for <strong style="color: #d95246">&nbsp;90 days</strong></li>
+						<li class="list-group-item">Access to <span>&nbsp;150,000 buyers</span></li>
+						<li class="list-group-item">Monthly email newsletters</li>
+						<li class="list-group-item">&nbsp;</li>
+				  </ul>
+				  <div class="card-block">
+						<a href="edit.html" class="btn btn-primary card-link">Get started</a>
+				  </div>
+				</div>
+
+			</div>
+			<div class="col-sm-4 text-center">
+				<div class="card  mt-3" >
+					<img class="card-img-top img-fluid mr-auto ml-auto mt-4" style="width: 20%" src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTcuMS4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTI7IiB4bWw6c3BhY2U9InByZXNlcnZlIiB3aWR0aD0iNTEycHgiIGhlaWdodD0iNTEycHgiPgo8Zz4KCTxwYXRoIGQ9Ik01MDQsNDQwaC0yNFYyMTQuOTY1YzEzLjg2OC0zLjY4MiwyNC0xNi43OTksMjQtMzIuMzI0di0yMi42Mzl2LTAuMDA1di00Ny45OTV2LTAuMDA1VjcyYzAtOC44MjItNy4xNzgtMTYtMTYtMTZIMjQgICBjLTguODIyLDAtMTYsNy4xNzgtMTYsMTZ2MTEwLjY0MmMwLDE1LjUyNSwxMC4xMzIsMjguNjQyLDI0LDMyLjMyNFY0NDBIOGMtNC40MTgsMC04LDMuNTgyLTgsOHMzLjU4Miw4LDgsOGgzMDRoMTEyaDgwICAgYzQuNDE4LDAsOC0zLjU4Miw4LThTNTA4LjQxOCw0NDAsNTA0LDQ0MHogTTQ4LDIxNS4wMDJjNS4yMDQtMS4zMzIsMTAuMDA1LTMuOTc0LDE0LjAyNS03Ljc4OSAgIGMwLjY5NC0wLjY1OCwxLjM1NS0xLjM0NiwxLjk4My0yLjA2MUM2OS44NzYsMjExLjgwMSw3OC40NTcsMjE2LDg4LDIxNmM5LjU0NywwLDE4LjEzMi00LjIwMywyNC0xMC44NTUgICBjNS44NjgsNi42NTIsMTQuNDUzLDEwLjg1NSwyNCwxMC44NTVzMTguMTMyLTQuMjAzLDI0LTEwLjg1NWM1Ljg2OCw2LjY1MiwxNC40NTMsMTAuODU1LDI0LDEwLjg1NXMxOC4xMzItNC4yMDMsMjQtMTAuODU1ICAgYzUuODY4LDYuNjUyLDE0LjQ1MywxMC44NTUsMjQsMTAuODU1czE4LjEzMi00LjIwMywyNC0xMC44NTVjNS44NjgsNi42NTIsMTQuNDUzLDEwLjg1NSwyNCwxMC44NTVzMTguMTMyLTQuMjAzLDI0LTEwLjg1NSAgIGMwLjEyNCwwLjE0MSwwLjI1NywwLjI3NCwwLjM4MywwLjQxM2MtMC4yNDcsMC43NzEtMC4zODMsMS41OS0wLjM4MywyLjQ0M3Y0OHYxMjBINDhWMjE1LjAwMnogTTQzMiwyNTZ2LTQxLjAyMyAgIGM2LjI4LTEuNjIzLDExLjgyMy01LjEsMTUuOTkyLTkuODIzYzAuNjI4LDAuNzE1LDEuMjg5LDEuNDAyLDEuOTgzLDIuMDYxYzQuMDIsMy44MTQsOC44MjMsNi40NSwxNC4wMjUsNy43ODJWMzc2aC0zMlYyNTZ6ICAgIE00NzIuODcyLDE5OS45NzdjLTQuNDQ1LDAuMjQzLTguNjY5LTEuMzE4LTExLjg4My00LjM2OEM0NTcuNzcxLDE5Mi41NTYsNDU2LDE4OC40MzMsNDU2LDE4NHYtNC42ODZsMjAuMTA0LDIwLjEwNCAgIEM0NzUuMDYyLDE5OS43MjIsNDczLjk4MiwxOTkuOTE4LDQ3Mi44NzIsMTk5Ljk3N3ogTTQ1NiwxNTYuNjg2di0yNS4zNzJsMzIsMzJ2MTkuMzI4YzAsMS44MjUtMC4yODIsMy41OTEtMC43ODQsNS4yNjEgICBMNDU2LDE1Ni42ODZ6IE00ODgsMTQwLjY4NmwtMzItMzJWODMuMzE0bDMyLDMyVjE0MC42ODZ6IE00NDAsMTExLjk5OHYwLjAwNXY0Ny45OTV2MC4wMDVWMTg0YzAsOC44MjItNy4xNzgsMTYtMTYsMTYgICBzLTE2LTcuMTc4LTE2LTE2di0yMy45OTh2LTAuMDA1di00Ny45OTV2LTAuMDA1VjcyaDMyVjExMS45OTh6IE0zNjAsMTU2LjY4NnYtMjUuMzcybDMyLDMyVjE4NGMwLDEuNDI5LTAuMjA2LDIuODA4LTAuNTU5LDQuMTI3ICAgTDM2MCwxNTYuNjg2eiBNMzkyLDE0MC42ODZsLTMyLTMyVjgzLjMxNGwzMiwzMlYxNDAuNjg2eiBNMzYwLDE3OS4zMTRsMjAuMTI3LDIwLjEyN0MzNzguODA4LDE5OS43OTQsMzc3LjQyOSwyMDAsMzc2LDIwMCAgIGMtOC44MjIsMC0xNi03LjE3OC0xNi0xNlYxNzkuMzE0eiBNMzkyLDkyLjY4NkwzNzEuMzE0LDcySDM5MlY5Mi42ODZ6IE0zNDQsMTExLjk5OHYwLjAwNXY0Ny45OTV2MC4wMDVWMTg0ICAgYzAsOC44MjItNy4xNzgsMTYtMTYsMTZzLTE2LTcuMTc4LTE2LTE2di0yMy45OTh2LTAuMDA1di00Ny45OTV2LTAuMDA1VjcyaDMyVjExMS45OTh6IE0yNjQsMTU2LjY4NnYtMjUuMzcybDMyLDMyVjE4NCAgIGMwLDEuNDI5LTAuMjA2LDIuODA4LTAuNTU5LDQuMTI3TDI2NCwxNTYuNjg2eiBNMjk2LDE0MC42ODZsLTMyLTMyVjgzLjMxNGwzMiwzMlYxNDAuNjg2eiBNMjY0LDE3OS4zMTRsMjAuMTI3LDIwLjEyNyAgIEMyODIuODA4LDE5OS43OTQsMjgxLjQyOSwyMDAsMjgwLDIwMGMtOC44MjIsMC0xNi03LjE3OC0xNi0xNlYxNzkuMzE0eiBNMjk2LDkyLjY4NkwyNzUuMzE0LDcySDI5NlY5Mi42ODZ6IE0yNDgsMTExLjk5OHYwLjAwNSAgIHY0Ny45OTV2MC4wMDVWMTg0YzAsOC44MjItNy4xNzgsMTYtMTYsMTZzLTE2LTcuMTc4LTE2LTE2di0yMy45OTh2LTAuMDA1di00Ny45OTV2LTAuMDA1VjcyaDMyVjExMS45OTh6IE0xNjgsMTU2LjY4NnYtMjUuMzcyICAgbDMyLDMyVjE4NGMwLDEuNDI5LTAuMjA2LDIuODA4LTAuNTU5LDQuMTI3TDE2OCwxNTYuNjg2eiBNMjAwLDE0MC42ODZsLTMyLTMyVjgzLjMxNGwzMiwzMlYxNDAuNjg2eiBNMTY4LDE3OS4zMTRsMjAuMTI3LDIwLjEyNyAgIEMxODYuODA4LDE5OS43OTQsMTg1LjQyOSwyMDAsMTg0LDIwMGMtOC44MjIsMC0xNi03LjE3OC0xNi0xNlYxNzkuMzE0eiBNMjAwLDkyLjY4NkwxNzkuMzE0LDcySDIwMFY5Mi42ODZ6IE0xNTIsMTExLjk5OHYwLjAwNSAgIHY0Ny45OTV2MC4wMDVWMTg0YzAsOC44MjItNy4xNzgsMTYtMTYsMTZzLTE2LTcuMTc4LTE2LTE2di0yMy45OTh2LTAuMDA1di00Ny45OTV2LTAuMDA1VjcyaDMyVjExMS45OTh6IE0xMDQsMTQwLjY4NmwtMzItMzIgICBWODMuMzE0bDMyLDMyVjE0MC42ODZ6IE0xMDQsMTYzLjMxNFYxODRjMCwxLjQyOS0wLjIwNiwyLjgwOC0wLjU1OSw0LjEyN0w3MiwxNTYuNjg2di0yNS4zNzJMMTA0LDE2My4zMTR6IE03MiwxNzkuMzE0ICAgbDIwLjEyNywyMC4xMjdDOTAuODA4LDE5OS43OTQsODkuNDI5LDIwMCw4OCwyMDBjLTguODIyLDAtMTYtNy4xNzgtMTYtMTZWMTc5LjMxNHogTTEwNCw5Mi42ODZMODMuMzE0LDcySDEwNFY5Mi42ODZ6ICAgIE0zMjAsMjE0Ljk3N2MyLjU1OSwwLjY2MSw1LjIzNywxLjAyMyw4LDEuMDIzYzkuNTQ3LDAsMTguMTMyLTQuMjAzLDI0LTEwLjg1NWM1Ljg2OCw2LjY1MiwxNC40NTMsMTAuODU1LDI0LDEwLjg1NSAgIHMxOC4xMzItNC4yMDMsMjQtMTAuODU1YzQuMTcsNC43MjgsOS43MTYsOC4yMDgsMTYsOS44MzJWMjQ4aC05NlYyMTQuOTc3eiBNNDMyLDM5MmgzMnYxNmgtOGMtNC40MTgsMC04LDMuNTgyLTgsOHMzLjU4Miw4LDgsOGg4ICAgdjE2aC0zMlYzOTJ6IE00ODgsOTIuNjg2TDQ2Ny4zMTQsNzJINDg4VjkyLjY4NnogTTI0LDE4Mi42NDJWNzJoMzJ2MzkuOTk4djAuMDA1djQ3Ljk5NXYwLjAwNVYxODQgICBjMCw0LjQzMy0xLjc3MSw4LjU1Ni00Ljk4OSwxMS42MDhjLTMuMjE0LDMuMDQ5LTcuNDM4LDQuNjA3LTExLjg4Myw0LjM2OEMzMC43ODYsMTk5LjU0LDI0LDE5MS43NjQsMjQsMTgyLjY0MnogTTQ4LDQyNGgyMzIgICBjNC40MTgsMCw4LTMuNTgyLDgtOHMtMy41ODItOC04LThINDh2LTE2aDI1NnY0OEg0OFY0MjR6IE0zMjAsNDQwVjI2NGg5NnYxNzZIMzIweiIgZmlsbD0iIzAwMDAwMCIvPgoJPHBhdGggZD0iTTMzNiwzMzZjLTQuNDE4LDAtOCwzLjU4Mi04LDh2MTZjMCw0LjQxOCwzLjU4Miw4LDgsOHM4LTMuNTgyLDgtOHYtMTZDMzQ0LDMzOS41ODIsMzQwLjQxOCwzMzYsMzM2LDMzNnoiIGZpbGw9IiMwMDAwMDAiLz4KCTxwYXRoIGQ9Ik0xMDkuNjU3LDIzNC4zNDNjLTMuMTI0LTMuMTIzLTguMTg5LTMuMTIzLTExLjMxMywwYy0zLjEyNSwzLjEyNS0zLjEyNSw4LjE4OSwwLDExLjMxNGwxMTIsMTEyICAgYzEuNTYyLDEuNTYyLDMuNjA5LDIuMzQzLDUuNjU3LDIuMzQzczQuMDk1LTAuNzgxLDUuNjU3LTIuMzQzYzMuMTI1LTMuMTI1LDMuMTI1LTguMTg5LDAtMTEuMzE0TDEwOS42NTcsMjM0LjM0M3oiIGZpbGw9IiMwMDAwMDAiLz4KCTxwYXRoIGQ9Ik0xODEuNjU3LDI1OC4zNDNjLTMuMTI0LTMuMTIzLTguMTg5LTMuMTIzLTExLjMxMywwYy0zLjEyNSwzLjEyNS0zLjEyNSw4LjE4OSwwLDExLjMxNGw2NCw2NCAgIGMxLjU2MiwxLjU2MiwzLjYwOSwyLjM0Myw1LjY1NywyLjM0M3M0LjA5NS0wLjc4MSw1LjY1Ny0yLjM0M2MzLjEyNS0zLjEyNSwzLjEyNS04LjE4OSwwLTExLjMxNEwxODEuNjU3LDI1OC4zNDN6IiBmaWxsPSIjMDAwMDAwIi8+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+				  <div class="card-block">
+				    <h4 class="card-title">399 AED</h4>
+						<p class="card-text">Advertise your businesses for under 70AED per month.</p>
+				  </div>
+				  <ul class="list-group list-group-flush">
+						<li class="list-group-item">Online for <strong>&nbsp;180 days</strong></li>
+				    <li class="list-group-item">Access to <span>&nbsp;150,000 buyers</span></li>
+						<li class="list-group-item">Monthly email newsletters</li>
+						<li class="list-group-item">Featured ad for first 5 days</li>
+				  </ul>
+				  <div class="card-block">
+						<a href="edit.html" class="btn btn-primary card-link">Get started</a>
+				  </div>
+				</div>
+
+			</div>
+			</div>
+
+		</div>
+		</div>
+
+
+
+
+		<div class="row mb-5">
+			<div class="col-sm-12 text-center">
+				<p class="text-muted">Buyer contact details will not be provided until you pay to advertise.</p>
+				<p class="text-muted">All packages are billed in one-off payments.</p>
+			</div>
+		</div>
+
+
+		</div>
+
+
+
+
+
+
+    
+
+      <footer class="footer text-white mt-0">
+		<div class="container">
+			<div class="row pt-5">
+
+				<div class="col-md-12">
+<div class="row">
+
+				<div class="col-md-12">
+					<h5 class="mt-4 mb-4 text-center">LOGO</h5>
+				</div>
+
+        <div class="col-md-6 offset-md-3">
+          <p class="mt-4 mb-4 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pellentesque molestie augue, ut congue erat ullamcorper vitae.</p>
+        </div>
+
+        <div class="col-md-6 offset-md-3">
+
+          <div class="d-flex justify-content-center mb-3 mt-3">
+            <ul class="social-network social-circle">
+                                    <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook fa-fw"></i></a></li>
+                                    <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter fa-fw"></i></a></li>
+                                    <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin fa-fw"></i></a></li>
+                                </ul>
+</div>
+
+
+        </div>
+
+
+
+
+
+				</div>
+				</div>
+
+
+			</div>
+			<br />
+			<br />
+		</div>
+      </footer>
+      
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+
+	<script>
+		var eventTime = moment().add(8, 'hours'); // Timestamp - Sun, 21 Apr 2013 13:00:00 GMT
+		var currentTime = 1366547400; // Timestamp - Sun, 21 Apr 2013 12:30:00 GMT
+		var diffTime = eventTime - currentTime;
+		var duration = moment.duration(diffTime*1000, 'milliseconds');
+		var interval = 1000;
+
+		setInterval(function(){
+		  duration = moment.duration(duration - interval, 'milliseconds');
+			$('#current_time').text(moment().format('MMMM Do YYYY, h:mma'));
+		}, interval);
+	</script>
+  </body>
+</html>
+
+    <script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='//www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','');ga('send','pageview');
+</script>
+
+    <script>
+var app = new Vue({
+  el: '#navbar',
+  data: {
+    search: false
+  },
+  methods: {
+    showSearchBar: function () {
+      this.search = true;
+    },
+    hideSearchBar: function () {
+      this.search = false;
+    }
+  }
+})
+</script>
+
+  </body>
+</html>

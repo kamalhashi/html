@@ -1,0 +1,1411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SAFAQAH</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.1/vue.min.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/covervid@1.0.0"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" ></script>
+
+  </head>
+  <body>
+
+    
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-primary fixed-top"  id="navbar" v-cloak >
+
+
+
+  <transition name="fade" mode="out-in">
+  <div class="container " v-if="!search"  style="margin-top: 20px;">
+    <div style="position: absolute; top: -30px; right: 20px; font-size: 10px;" class="hidden-sm-down-bak">
+
+      <a href="" style="font-size: 10px;">English</a>
+      <span class="mr-1 ml-1">|</span>
+      <a href="" style="font-size: 10px;">&#x627;&#x644;&#x639;&#x631;&#x628;&#x64A;&#x629;</a>
+    </div>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+  <a class="navbar-brand" href="index.html">SAFAQAH</a>
+  <div class="flag-selector" style="">
+    <div class="dropdown dropdown-country">
+      <button class="btn btn-secondary btn-xs dropdown-toggle" style="border: none; border-radius: 5px; background: transparent; cursor: pointer;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/ae.svg" style="width: 8px"/> <span style="margin-top: 5px;     font-size: 11px;">UAE</span>
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/bh.svg" style="width: 12px"/> Bahrain</a>
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/kw.svg" style="width: 12px"/> Kuwait</a>
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/om.svg" style="width: 12px"/> Oman</a>
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/qa.svg" style="width: 12px"/> Qatar</a>
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/sa.svg" style="width: 12px"/> Saudi Arabia</a>
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/ae.svg" style="width: 12px"/> UAE</a>
+      </div>
+    </div>
+                      </div>
+  <div class="collapse navbar-collapse" id="navbarColor01">
+
+    <ul class="navbar-nav mr-auto" >
+
+    </ul>
+    <ul class="navbar-nav" >
+
+      <li class="nav-item active dropdown">
+        <a class="nav-link dropdown-toggle" href="categories.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          All Categories
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="search.html">Agriculture <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Building & Construction <span class="text-muted">(2)</span></a>
+          <a class="dropdown-item" href="search.html">Computer, Internet & Technology <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Education <span class="text-muted">(2)</span></a>
+          <a class="dropdown-item" href="search.html">Entertainment & Leisure <span class="text-muted">(2)</span></a>
+          <a class="dropdown-item" href="search.html">Food & Beverage <span class="text-muted">(7)</span></a>
+          <a class="dropdown-item" href="search.html">Hair and Beauty <span class="text-muted">(2)</span></a>
+          <a class="dropdown-item" href="search.html">Health, Medical and Fitness <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Manufacturing <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Real Estate <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Retail <span class="text-muted">(4)</span></a>
+          <a class="dropdown-item" href="search.html">Service <span class="text-muted">(6)</span></a>
+          <a class="dropdown-item" href="search.html">Transportation <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Travel Related <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Wholesale & Distribution <span class="text-muted">(0)</span></a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="how.html">How it works</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pricing.html">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blog.html">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      
+      <li class="nav-item mr-2">
+        <a class="nav-link" href="login.html"><i class="icon-user icons"></i></a>
+      </li>
+      
+      
+      <li class="nav-item">
+        <a  href="edit.html" class="btn btn-primary my-2 my-sm-0">SELL YOUR BUSINESS</a>
+      </li>
+      
+    </ul>
+  </div>
+    </div>
+
+    <div class="container" v-else>
+  <div class="input-group search-bar">
+  <span class="input-group-addon"><i class="icon-magnifier icons"></i></span>
+  <input type="text" class="form-control form-control-lg" placeholder="Search">
+  <span class="input-group-addon" ><a href="" class="text-muted" v-on:click.prevent="hideSearchBar"><i class="icon-close icons"></i></a></span>
+</div>
+    </div>
+    </transition>
+
+</nav>
+
+
+
+
+      
+<style>
+  .swiper-container {
+    width: 100%;
+  }
+
+  .swiper-wrapper {
+    box-sizing: border-box;
+  }
+
+  .swiper-slide {}
+</style>
+
+
+<div class="homepage-hero-module" style="height: 460px;" id="home">
+  <div class="video-container">
+    <div class="filter"></div>
+    <video autoplay loop class="covervid-video">
+            <source src="video/MP4/In-And-Out.mp4" type="video/mp4" />
+        </video>
+  </div>
+  <div class="  home-banner" style="position: absolute; top: 0; left: 0">
+    <div class="container inner ">
+
+
+
+
+      <br />
+      <br />
+      <br />
+      <div class="row mt-5">
+        <div class="col-sm-12">
+
+          <h1 class="text-center">Buy and Sell Businesses</h1>
+          <h2 class="text-center mt-3 hidden-sm-down">Welcome to the UAE's largest marketplace of businesses for sale.</h2>
+
+        </div>
+      </div>
+
+      <div class="row mt-4">
+        <div class="col-12 col-md-10 offset-md-1">
+
+          <div class="row mt-4">
+            <div class="col-12 col-sm-9">
+
+              <div style="border-radius: 0px; margin-top: 21px; background: rgba(255,255,255,0.99); display: block;  padding: 10px;  box-shadow: -4px 4px 16px -1px rgba(245,245,245,0.24);
+">
+
+                <div class="input-group">
+                  <input type="text" class="form-control form-control-lg" placeholder="e.g. Hotels in Dubai" style="background: #E0E0E0; border:1px solid #BDBDBD;font-weight:bold; text-transform: suppercase;">
+                  <div class="input-group-btn    hidden-sm-down" style="margin-left: 3px;">
+                    <button type="button" style="border: none;" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  All Categories
+                                </button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      
+                      <a class="dropdown-item" href="#">Agriculture</a> 
+                      <a class="dropdown-item" href="#">Building & Construction</a> 
+                      <a class="dropdown-item" href="#">Computer, Internet & Technology</a> 
+                      <a class="dropdown-item" href="#">Education</a> 
+                      <a class="dropdown-item" href="#">Entertainment & Leisure</a> 
+                      <a class="dropdown-item" href="#">Food & Beverage</a> 
+                      <a class="dropdown-item" href="#">Hair and Beauty</a> 
+                      <a class="dropdown-item" href="#">Health, Medical and Fitness</a> 
+                      <a class="dropdown-item" href="#">Manufacturing</a> 
+                      <a class="dropdown-item" href="#">Real Estate</a> 
+                      <a class="dropdown-item" href="#">Retail</a> 
+                      <a class="dropdown-item" href="#">Service</a> 
+                      <a class="dropdown-item" href="#">Transportation</a> 
+                      <a class="dropdown-item" href="#">Travel Related</a> 
+                      <a class="dropdown-item" href="#">Wholesale & Distribution</a> 
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <a href="search.html" class=" pull-right" style="color: #E0E0E0">Advanced search <i class="fa fa-angle-double-right" aria-hidden="true"></i></a>
+            </div>
+            <div class="col-6 offset-3 offset-sm-0 col-sm-3">
+              <a href="search.html" class="btn btn-primary btn-lg btn-block" style="margin-top: 26px; border-width: 6px;box-shadow: -4px 4px 16px -1px rgba(245,245,245,0.24);;">SEARCH</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+</div>
+
+
+
+<div class=" light-blue-bak pt-5 pb-5" style="background: #fafafa">
+  <div class="container inner">
+
+
+    <div   id="featured-latest">
+    <div class="row" v-cloak>
+      <div class="col-sm-12 mb-5 mt-3">
+        <h3 class="text-center" >FEATURED BUSINESSES AND FRANCHISES FOR SALE</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 mb-5 mt-0 text-center">
+
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" :class="[featured ? 'btn-primary' : 'btn-outline-primary']" class="btn btn-primary btn-lg" @click.prevent="show(true)">FEATURED</button>
+          <button type="button" :class="[!featured ? 'btn-primary' : 'btn-outline-primary']" class="btn  btn-lg " @click.prevent="show(false)">&nbsp;&nbsp;LATEST&nbsp;&nbsp;</button>
+        </div>
+
+
+      </div>
+    </div>
+    </div>
+    <div class="row mt-2 mb-0">
+      <div class="col-1">
+        <div class="swiper-button-prev" style="margin-top: -58px;"></div>
+      </div>
+      <div class="col-10">
+        <div class="row">
+          <div class="col-12 col-10">
+
+            <div class="swiper-container" id="swiper-container">
+              <div class="swiper-wrapper">
+
+                
+                <div class="swiper-slide">
+
+                  <div class="card box">
+	<a href="project.html" ><img class="img-fluid" src="https://unsplash.it/410/210?image=11" class="img-fluid"/></a>
+	<div class="card-block" class="pb-1" style="position: relative; padding-bottom: 60px; min-height: 170px;">
+
+				<h6><a href="project.html">architect frictionless supply-chains</a></h6>
+				<p class="desc">MTS ASL Curriculum Workbook is a reproducible study book to build Early Literacy and Academic skills for primary school age children.</p>
+
+				<div style="position: absolute; bottom: 20px; width: 86%; ">
+					<a href="">Learn more</a>
+				</div>
+
+	</div>
+
+</div>
+
+
+                </div>
+                
+                <div class="swiper-slide">
+
+                  <div class="card box">
+	<a href="project.html" ><img class="img-fluid" src="https://unsplash.it/410/210?image=21" class="img-fluid"/></a>
+	<div class="card-block" class="pb-1" style="position: relative; padding-bottom: 60px; min-height: 170px;">
+
+				<h6><a href="project.html">iterate plug-and-play metrics</a></h6>
+				<p class="desc">This kit teaches how to print, correct an ugly grasp, and how to make sure your child's fine motor skills are kindergarten ready!</p>
+
+				<div style="position: absolute; bottom: 20px; width: 86%; ">
+					<a href="">Learn more</a>
+				</div>
+
+	</div>
+
+</div>
+
+
+                </div>
+                
+                <div class="swiper-slide">
+
+                  <div class="card box">
+	<a href="project.html" ><img class="img-fluid" src="https://unsplash.it/410/210?image=31" class="img-fluid"/></a>
+	<div class="card-block" class="pb-1" style="position: relative; padding-bottom: 60px; min-height: 170px;">
+
+				<h6><a href="project.html">architect best-of-breed niches</a></h6>
+				<p class="desc">Establishing a free, world-class, public library which will be a center  for curating and disseminating knowledge in Nigeria.</p>
+
+				<div style="position: absolute; bottom: 20px; width: 86%; ">
+					<a href="">Learn more</a>
+				</div>
+
+	</div>
+
+</div>
+
+
+                </div>
+                
+                <div class="swiper-slide">
+
+                  <div class="card box">
+	<a href="project.html" ><img class="img-fluid" src="https://unsplash.it/410/210?image=41" class="img-fluid"/></a>
+	<div class="card-block" class="pb-1" style="position: relative; padding-bottom: 60px; min-height: 170px;">
+
+				<h6><a href="project.html">iterate impactful interfaces</a></h6>
+				<p class="desc">Goal: Introducing a new word into the English language/dictionary.\nReason: The beauty of the English language is the freedom to create.</p>
+
+				<div style="position: absolute; bottom: 20px; width: 86%; ">
+					<a href="">Learn more</a>
+				</div>
+
+	</div>
+
+</div>
+
+
+                </div>
+                
+                <div class="swiper-slide">
+
+                  <div class="card box">
+	<a href="project.html" ><img class="img-fluid" src="https://unsplash.it/410/210?image=51" class="img-fluid"/></a>
+	<div class="card-block" class="pb-1" style="position: relative; padding-bottom: 60px; min-height: 170px;">
+
+				<h6><a href="project.html">envisioneer viral functionalities</a></h6>
+				<p class="desc">Zu den Artikeln der DSGVO sind die korrespondierenden Erwägungsgründe und die vergleichbaren Regelungen aus dem BDSG gegenüber gestellt</p>
+
+				<div style="position: absolute; bottom: 20px; width: 86%; ">
+					<a href="">Learn more</a>
+				</div>
+
+	</div>
+
+</div>
+
+
+                </div>
+                
+                <div class="swiper-slide">
+
+                  <div class="card box">
+	<a href="project.html" ><img class="img-fluid" src="https://unsplash.it/410/210?image=61" class="img-fluid"/></a>
+	<div class="card-block" class="pb-1" style="position: relative; padding-bottom: 60px; min-height: 170px;">
+
+				<h6><a href="project.html">incubate next-generation platforms</a></h6>
+				<p class="desc">Shadow School Board will provide parents & taxpayers a "how-to manual" to restore accountability to your school district's real board.</p>
+
+				<div style="position: absolute; bottom: 20px; width: 86%; ">
+					<a href="">Learn more</a>
+				</div>
+
+	</div>
+
+</div>
+
+
+                </div>
+                
+                <div class="swiper-slide">
+
+                  <div class="card box">
+	<a href="project.html" ><img class="img-fluid" src="https://unsplash.it/410/210?image=71" class="img-fluid"/></a>
+	<div class="card-block" class="pb-1" style="position: relative; padding-bottom: 60px; min-height: 170px;">
+
+				<h6><a href="project.html">grow strategic schemas</a></h6>
+				<p class="desc">I want to create an organization that is composed of selfless people who are dedicated to prevent HIV related deaths and transmission.</p>
+
+				<div style="position: absolute; bottom: 20px; width: 86%; ">
+					<a href="">Learn more</a>
+				</div>
+
+	</div>
+
+</div>
+
+
+                </div>
+                
+                <div class="swiper-slide">
+
+                  <div class="card box">
+	<a href="project.html" ><img class="img-fluid" src="https://unsplash.it/410/210?image=81" class="img-fluid"/></a>
+	<div class="card-block" class="pb-1" style="position: relative; padding-bottom: 60px; min-height: 170px;">
+
+				<h6><a href="project.html">incubate plug-and-play vortals</a></h6>
+				<p class="desc">Group of passionate and eager students gaining experience in the Stock market through research, collaboration and hard work.</p>
+
+				<div style="position: absolute; bottom: 20px; width: 86%; ">
+					<a href="">Learn more</a>
+				</div>
+
+	</div>
+
+</div>
+
+
+                </div>
+                
+                <div class="swiper-slide">
+
+                  <div class="card box">
+	<a href="project.html" ><img class="img-fluid" src="https://unsplash.it/410/210?image=91" class="img-fluid"/></a>
+	<div class="card-block" class="pb-1" style="position: relative; padding-bottom: 60px; min-height: 170px;">
+
+				<h6><a href="project.html">recontextualize 24/7 portals</a></h6>
+				<p class="desc">V.I.P.-Architecture shows the most iconic, the most famous and most important buildings of our planet in one book.</p>
+
+				<div style="position: absolute; bottom: 20px; width: 86%; ">
+					<a href="">Learn more</a>
+				</div>
+
+	</div>
+
+</div>
+
+
+                </div>
+                
+                <div class="swiper-slide">
+
+                  <div class="card box">
+	<a href="project.html" ><img class="img-fluid" src="https://unsplash.it/410/210?image=101" class="img-fluid"/></a>
+	<div class="card-block" class="pb-1" style="position: relative; padding-bottom: 60px; min-height: 170px;">
+
+				<h6><a href="project.html">e-enable mission-critical communities</a></h6>
+				<p class="desc">A collection of plays, screenplays, and photographs from the productions written by Ross Wells, Texas playwright, director, and actor.</p>
+
+				<div style="position: absolute; bottom: 20px; width: 86%; ">
+					<a href="">Learn more</a>
+				</div>
+
+	</div>
+
+</div>
+
+
+                </div>
+                
+
+
+              </div>
+
+
+
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-container swiper-container-horizontal d-flex justify-content-center bd-highlight mb-0" style="overflow: visible;">
+          <div class="p-2 bd-highlight">
+            <div class="swiper-pagination mt-5" style="position: relative; margin: 0 auto;"></div>
+
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+      <div class="col-1">
+        <div class="swiper-button-next" style="margin-top: -58px;"></div>
+
+      </div>
+    </div>
+
+
+    <div class="row" style="display: none">
+
+      
+      <div class="col-sm-4">
+        <div class="card box">
+	<a href="project.html" ><img class="img-fluid" src="https://unsplash.it/410/210?image=11" class="img-fluid"/></a>
+	<div class="card-block" class="pb-1" style="position: relative; padding-bottom: 60px; min-height: 170px;">
+
+				<h6><a href="project.html">architect frictionless supply-chains</a></h6>
+				<p class="desc">MTS ASL Curriculum Workbook is a reproducible study book to build Early Literacy and Academic skills for primary school age children.</p>
+
+				<div style="position: absolute; bottom: 20px; width: 86%; ">
+					<a href="">Learn more</a>
+				</div>
+
+	</div>
+
+</div>
+
+      </div>
+      
+      <div class="col-sm-4">
+        <div class="card box">
+	<a href="project.html" ><img class="img-fluid" src="https://unsplash.it/410/210?image=21" class="img-fluid"/></a>
+	<div class="card-block" class="pb-1" style="position: relative; padding-bottom: 60px; min-height: 170px;">
+
+				<h6><a href="project.html">iterate plug-and-play metrics</a></h6>
+				<p class="desc">This kit teaches how to print, correct an ugly grasp, and how to make sure your child's fine motor skills are kindergarten ready!</p>
+
+				<div style="position: absolute; bottom: 20px; width: 86%; ">
+					<a href="">Learn more</a>
+				</div>
+
+	</div>
+
+</div>
+
+      </div>
+      
+      <div class="col-sm-4">
+        <div class="card box">
+	<a href="project.html" ><img class="img-fluid" src="https://unsplash.it/410/210?image=31" class="img-fluid"/></a>
+	<div class="card-block" class="pb-1" style="position: relative; padding-bottom: 60px; min-height: 170px;">
+
+				<h6><a href="project.html">architect best-of-breed niches</a></h6>
+				<p class="desc">Establishing a free, world-class, public library which will be a center  for curating and disseminating knowledge in Nigeria.</p>
+
+				<div style="position: absolute; bottom: 20px; width: 86%; ">
+					<a href="">Learn more</a>
+				</div>
+
+	</div>
+
+</div>
+
+      </div>
+      
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+<div class="row mt-5" style="display: none">
+  <div class="col-sm-12 mb-2 mt-0 text-center">
+
+    <a href="" class="btn btn-primary btn-lg">LOAD MORE</a>
+
+  </div>
+</div>
+
+</div>
+</div>
+<div class="mt-5">
+  <div class="container inner" id="categories">
+
+    <div class="row">
+      <div class="col-sm-12 mb-0 mt-3">
+        <h3 class="text-center">POPULAR CATEGORIES</h3>
+      </div>
+    </div>
+
+    <div class="row mt-2">
+
+
+      
+      <div class="col-sm-3 mb-5 mt-4  mr-auto ml-auto">
+
+        <div class="d-flex align-items-center mr-auto ml-auto">
+
+          <div class="d-flex align-items-center  mr-auto ml-auto" style="display: block;    position: relative; ">
+            <img src="http://i.expresspixel.com/unsplash.it/300/300?image=100" class="img-fluid equalize-main" />
+            <a href="" class="d-flex align-items-center text-center equalize" style="">
+              <div style="position: absolute;width: 100%;height: 100%;padding: 10px;padding-top: 25%; pointer:cursor">
+                <span class="swiper-text">Agriculture</span>
+                <span style="margin: 0 auto;font-size: 48px; color: #fff;">20</span>
+                <br />
+                <br />
+                <div class="text-center">
+
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-3 mb-5 mt-4  mr-auto ml-auto">
+
+        <div class="d-flex align-items-center mr-auto ml-auto">
+
+          <div class="d-flex align-items-center  mr-auto ml-auto" style="display: block;    position: relative; ">
+            <img src="http://i.expresspixel.com/unsplash.it/300/300?image=200" class="img-fluid equalize-main" />
+            <a href="" class="d-flex align-items-center text-center equalize" style="">
+              <div style="position: absolute;width: 100%;height: 100%;padding: 10px;padding-top: 25%; pointer:cursor">
+                <span class="swiper-text">Building & Construction</span>
+                <span style="margin: 0 auto;font-size: 48px; color: #fff;">60</span>
+                <br />
+                <br />
+                <div class="text-center">
+
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-3 mb-5 mt-4  mr-auto ml-auto">
+
+        <div class="d-flex align-items-center mr-auto ml-auto">
+
+          <div class="d-flex align-items-center  mr-auto ml-auto" style="display: block;    position: relative; ">
+            <img src="http://i.expresspixel.com/unsplash.it/300/300?image=300" class="img-fluid equalize-main" />
+            <a href="" class="d-flex align-items-center text-center equalize" style="">
+              <div style="position: absolute;width: 100%;height: 100%;padding: 10px;padding-top: 25%; pointer:cursor">
+                <span class="swiper-text">Computer, Internet & Technology</span>
+                <span style="margin: 0 auto;font-size: 48px; color: #fff;">55</span>
+                <br />
+                <br />
+                <div class="text-center">
+
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-3 mb-5 mt-4  mr-auto ml-auto">
+
+        <div class="d-flex align-items-center mr-auto ml-auto">
+
+          <div class="d-flex align-items-center  mr-auto ml-auto" style="display: block;    position: relative; ">
+            <img src="http://i.expresspixel.com/unsplash.it/300/300?image=400" class="img-fluid equalize-main" />
+            <a href="" class="d-flex align-items-center text-center equalize" style="">
+              <div style="position: absolute;width: 100%;height: 100%;padding: 10px;padding-top: 25%; pointer:cursor">
+                <span class="swiper-text">Education</span>
+                <span style="margin: 0 auto;font-size: 48px; color: #fff;">40</span>
+                <br />
+                <br />
+                <div class="text-center">
+
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-3 mb-5 mt-4  mr-auto ml-auto">
+
+        <div class="d-flex align-items-center mr-auto ml-auto">
+
+          <div class="d-flex align-items-center  mr-auto ml-auto" style="display: block;    position: relative; ">
+            <img src="http://i.expresspixel.com/unsplash.it/300/300?image=500" class="img-fluid equalize-main" />
+            <a href="" class="d-flex align-items-center text-center equalize" style="">
+              <div style="position: absolute;width: 100%;height: 100%;padding: 10px;padding-top: 25%; pointer:cursor">
+                <span class="swiper-text">Entertainment & Leisure</span>
+                <span style="margin: 0 auto;font-size: 48px; color: #fff;">35</span>
+                <br />
+                <br />
+                <div class="text-center">
+
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-3 mb-5 mt-4  mr-auto ml-auto">
+
+        <div class="d-flex align-items-center mr-auto ml-auto">
+
+          <div class="d-flex align-items-center  mr-auto ml-auto" style="display: block;    position: relative; ">
+            <img src="http://i.expresspixel.com/unsplash.it/300/300?image=600" class="img-fluid equalize-main" />
+            <a href="" class="d-flex align-items-center text-center equalize" style="">
+              <div style="position: absolute;width: 100%;height: 100%;padding: 10px;padding-top: 25%; pointer:cursor">
+                <span class="swiper-text">Food & Beverage</span>
+                <span style="margin: 0 auto;font-size: 48px; color: #fff;">75</span>
+                <br />
+                <br />
+                <div class="text-center">
+
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-3 mb-5 mt-4  mr-auto ml-auto">
+
+        <div class="d-flex align-items-center mr-auto ml-auto">
+
+          <div class="d-flex align-items-center  mr-auto ml-auto" style="display: block;    position: relative; ">
+            <img src="http://i.expresspixel.com/unsplash.it/300/300?image=700" class="img-fluid equalize-main" />
+            <a href="" class="d-flex align-items-center text-center equalize" style="">
+              <div style="position: absolute;width: 100%;height: 100%;padding: 10px;padding-top: 25%; pointer:cursor">
+                <span class="swiper-text">Hair and Beauty</span>
+                <span style="margin: 0 auto;font-size: 48px; color: #fff;">80</span>
+                <br />
+                <br />
+                <div class="text-center">
+
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-3 mb-5 mt-4  mr-auto ml-auto">
+
+        <div class="d-flex align-items-center mr-auto ml-auto">
+
+          <div class="d-flex align-items-center  mr-auto ml-auto" style="display: block;    position: relative; ">
+            <img src="http://i.expresspixel.com/unsplash.it/300/300?image=800" class="img-fluid equalize-main" />
+            <a href="" class="d-flex align-items-center text-center equalize" style="">
+              <div style="position: absolute;width: 100%;height: 100%;padding: 10px;padding-top: 25%; pointer:cursor">
+                <span class="swiper-text">Health, Medical and Fitness</span>
+                <span style="margin: 0 auto;font-size: 48px; color: #fff;">95</span>
+                <br />
+                <br />
+                <div class="text-center">
+
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+       
+      <div class="col-sm-3 mb-5 mt-4" v-if="showAll">
+
+        <div class="d-flex align-items-center">
+
+          <div class="d-flex align-items-center" style="display: block ">
+            <img src="http://i.expresspixel.com/unsplash.it/300/300?image=100" class="img-fluid equalize-main" />
+            <a href="" class="d-flex align-items-center text-center equalize" style="">
+              <div style="position: relative;width: 100%;height: 100%;padding: 10px;padding-top: 25%; pointer:cursor">
+                <span class="swiper-text">Manufacturing</span>
+                <span style="margin: 0 auto;font-size: 48px; color: #fff;">15</span>
+                <br />
+                <br />
+                <div class="text-center">
+
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-3 mb-5 mt-4" v-if="showAll">
+
+        <div class="d-flex align-items-center">
+
+          <div class="d-flex align-items-center" style="display: block ">
+            <img src="http://i.expresspixel.com/unsplash.it/300/300?image=200" class="img-fluid equalize-main" />
+            <a href="" class="d-flex align-items-center text-center equalize" style="">
+              <div style="position: relative;width: 100%;height: 100%;padding: 10px;padding-top: 25%; pointer:cursor">
+                <span class="swiper-text">Real Estate</span>
+                <span style="margin: 0 auto;font-size: 48px; color: #fff;">66</span>
+                <br />
+                <br />
+                <div class="text-center">
+
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-3 mb-5 mt-4" v-if="showAll">
+
+        <div class="d-flex align-items-center">
+
+          <div class="d-flex align-items-center" style="display: block ">
+            <img src="http://i.expresspixel.com/unsplash.it/300/300?image=300" class="img-fluid equalize-main" />
+            <a href="" class="d-flex align-items-center text-center equalize" style="">
+              <div style="position: relative;width: 100%;height: 100%;padding: 10px;padding-top: 25%; pointer:cursor">
+                <span class="swiper-text">Retail</span>
+                <span style="margin: 0 auto;font-size: 48px; color: #fff;">44</span>
+                <br />
+                <br />
+                <div class="text-center">
+
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-3 mb-5 mt-4" v-if="showAll">
+
+        <div class="d-flex align-items-center">
+
+          <div class="d-flex align-items-center" style="display: block ">
+            <img src="http://i.expresspixel.com/unsplash.it/300/300?image=400" class="img-fluid equalize-main" />
+            <a href="" class="d-flex align-items-center text-center equalize" style="">
+              <div style="position: relative;width: 100%;height: 100%;padding: 10px;padding-top: 25%; pointer:cursor">
+                <span class="swiper-text">Service</span>
+                <span style="margin: 0 auto;font-size: 48px; color: #fff;">33</span>
+                <br />
+                <br />
+                <div class="text-center">
+
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-3 mb-5 mt-4" v-if="showAll">
+
+        <div class="d-flex align-items-center">
+
+          <div class="d-flex align-items-center" style="display: block ">
+            <img src="http://i.expresspixel.com/unsplash.it/300/300?image=500" class="img-fluid equalize-main" />
+            <a href="" class="d-flex align-items-center text-center equalize" style="">
+              <div style="position: relative;width: 100%;height: 100%;padding: 10px;padding-top: 25%; pointer:cursor">
+                <span class="swiper-text">Transportation</span>
+                <span style="margin: 0 auto;font-size: 48px; color: #fff;">22</span>
+                <br />
+                <br />
+                <div class="text-center">
+
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-3 mb-5 mt-4" v-if="showAll">
+
+        <div class="d-flex align-items-center">
+
+          <div class="d-flex align-items-center" style="display: block ">
+            <img src="http://i.expresspixel.com/unsplash.it/300/300?image=600" class="img-fluid equalize-main" />
+            <a href="" class="d-flex align-items-center text-center equalize" style="">
+              <div style="position: relative;width: 100%;height: 100%;padding: 10px;padding-top: 25%; pointer:cursor">
+                <span class="swiper-text">Travel Related</span>
+                <span style="margin: 0 auto;font-size: 48px; color: #fff;">12</span>
+                <br />
+                <br />
+                <div class="text-center">
+
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      
+      <div class="col-sm-3 mb-5 mt-4" v-if="showAll">
+
+        <div class="d-flex align-items-center">
+
+          <div class="d-flex align-items-center" style="display: block ">
+            <img src="http://i.expresspixel.com/unsplash.it/300/300?image=700" class="img-fluid equalize-main" />
+            <a href="" class="d-flex align-items-center text-center equalize" style="">
+              <div style="position: relative;width: 100%;height: 100%;padding: 10px;padding-top: 25%; pointer:cursor">
+                <span class="swiper-text">Wholesale & Distribution</span>
+                <span style="margin: 0 auto;font-size: 48px; color: #fff;">6</span>
+                <br />
+                <br />
+                <div class="text-center">
+
+                </div>
+              </div>
+            </a>
+
+          </div>
+        </div>
+      </div>
+      
+
+
+      <!--<div class="swiper-container">
+<div class="swiper-wrapper">
+
+  
+  <div class="swiper-slide d-flex align-items-center">
+
+    <div class="d-flex align-items-center" style="display: block; background: #000; ">
+        <img src="https://unsplash.it/300/300?image=0" class="img-fluid equalize-main"/>
+        <a href="" class="d-flex align-items-center text-center equalize"  style="position: absolute; width: 100%; height: 100%; background: rgba(0,0,0,0.5)">
+        <div  style="    position: relative;width: 100%;height: 100%;padding: 10px;padding-top: 32%; pointer:cursor">
+          <i class="icon-plus icons" aria-hidden="true" style="margin: 0 auto;font-size: 48px; color: #fff;"></i>
+          <br />
+          <br />
+          <div class="text-left">
+          <span class="swiper-text">Building &amp; Construction</span>
+        </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+  
+  <div class="swiper-slide d-flex align-items-center">
+
+    <div class="d-flex align-items-center" style="display: block; background: #000; ">
+        <img src="https://unsplash.it/300/300?image=100" class="img-fluid equalize-main"/>
+        <a href="" class="d-flex align-items-center text-center equalize"  style="position: absolute; width: 100%; height: 100%; background: rgba(0,0,0,0.5)">
+        <div  style="    position: relative;width: 100%;height: 100%;padding: 10px;padding-top: 32%; pointer:cursor">
+          <i class="icon-plus icons" aria-hidden="true" style="margin: 0 auto;font-size: 48px; color: #fff;"></i>
+          <br />
+          <br />
+          <div class="text-left">
+          <span class="swiper-text">Building &amp; Construction</span>
+        </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+  
+  <div class="swiper-slide d-flex align-items-center">
+
+    <div class="d-flex align-items-center" style="display: block; background: #000; ">
+        <img src="https://unsplash.it/300/300?image=200" class="img-fluid equalize-main"/>
+        <a href="" class="d-flex align-items-center text-center equalize"  style="position: absolute; width: 100%; height: 100%; background: rgba(0,0,0,0.5)">
+        <div  style="    position: relative;width: 100%;height: 100%;padding: 10px;padding-top: 32%; pointer:cursor">
+          <i class="icon-plus icons" aria-hidden="true" style="margin: 0 auto;font-size: 48px; color: #fff;"></i>
+          <br />
+          <br />
+          <div class="text-left">
+          <span class="swiper-text">Building &amp; Construction</span>
+        </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+  
+  <div class="swiper-slide d-flex align-items-center">
+
+    <div class="d-flex align-items-center" style="display: block; background: #000; ">
+        <img src="https://unsplash.it/300/300?image=300" class="img-fluid equalize-main"/>
+        <a href="" class="d-flex align-items-center text-center equalize"  style="position: absolute; width: 100%; height: 100%; background: rgba(0,0,0,0.5)">
+        <div  style="    position: relative;width: 100%;height: 100%;padding: 10px;padding-top: 32%; pointer:cursor">
+          <i class="icon-plus icons" aria-hidden="true" style="margin: 0 auto;font-size: 48px; color: #fff;"></i>
+          <br />
+          <br />
+          <div class="text-left">
+          <span class="swiper-text">Building &amp; Construction</span>
+        </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+  
+  <div class="swiper-slide d-flex align-items-center">
+
+    <div class="d-flex align-items-center" style="display: block; background: #000; ">
+        <img src="https://unsplash.it/300/300?image=400" class="img-fluid equalize-main"/>
+        <a href="" class="d-flex align-items-center text-center equalize"  style="position: absolute; width: 100%; height: 100%; background: rgba(0,0,0,0.5)">
+        <div  style="    position: relative;width: 100%;height: 100%;padding: 10px;padding-top: 32%; pointer:cursor">
+          <i class="icon-plus icons" aria-hidden="true" style="margin: 0 auto;font-size: 48px; color: #fff;"></i>
+          <br />
+          <br />
+          <div class="text-left">
+          <span class="swiper-text">Building &amp; Construction</span>
+        </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+  
+  <div class="swiper-slide d-flex align-items-center">
+
+    <div class="d-flex align-items-center" style="display: block; background: #000; ">
+        <img src="https://unsplash.it/300/300?image=500" class="img-fluid equalize-main"/>
+        <a href="" class="d-flex align-items-center text-center equalize"  style="position: absolute; width: 100%; height: 100%; background: rgba(0,0,0,0.5)">
+        <div  style="    position: relative;width: 100%;height: 100%;padding: 10px;padding-top: 32%; pointer:cursor">
+          <i class="icon-plus icons" aria-hidden="true" style="margin: 0 auto;font-size: 48px; color: #fff;"></i>
+          <br />
+          <br />
+          <div class="text-left">
+          <span class="swiper-text">Building &amp; Construction</span>
+        </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+  
+  <div class="swiper-slide d-flex align-items-center">
+
+    <div class="d-flex align-items-center" style="display: block; background: #000; ">
+        <img src="https://unsplash.it/300/300?image=600" class="img-fluid equalize-main"/>
+        <a href="" class="d-flex align-items-center text-center equalize"  style="position: absolute; width: 100%; height: 100%; background: rgba(0,0,0,0.5)">
+        <div  style="    position: relative;width: 100%;height: 100%;padding: 10px;padding-top: 32%; pointer:cursor">
+          <i class="icon-plus icons" aria-hidden="true" style="margin: 0 auto;font-size: 48px; color: #fff;"></i>
+          <br />
+          <br />
+          <div class="text-left">
+          <span class="swiper-text">Building &amp; Construction</span>
+        </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+  
+  <div class="swiper-slide d-flex align-items-center">
+
+    <div class="d-flex align-items-center" style="display: block; background: #000; ">
+        <img src="https://unsplash.it/300/300?image=700" class="img-fluid equalize-main"/>
+        <a href="" class="d-flex align-items-center text-center equalize"  style="position: absolute; width: 100%; height: 100%; background: rgba(0,0,0,0.5)">
+        <div  style="    position: relative;width: 100%;height: 100%;padding: 10px;padding-top: 32%; pointer:cursor">
+          <i class="icon-plus icons" aria-hidden="true" style="margin: 0 auto;font-size: 48px; color: #fff;"></i>
+          <br />
+          <br />
+          <div class="text-left">
+          <span class="swiper-text">Building &amp; Construction</span>
+        </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+  
+  <div class="swiper-slide d-flex align-items-center">
+
+    <div class="d-flex align-items-center" style="display: block; background: #000; ">
+        <img src="https://unsplash.it/300/300?image=800" class="img-fluid equalize-main"/>
+        <a href="" class="d-flex align-items-center text-center equalize"  style="position: absolute; width: 100%; height: 100%; background: rgba(0,0,0,0.5)">
+        <div  style="    position: relative;width: 100%;height: 100%;padding: 10px;padding-top: 32%; pointer:cursor">
+          <i class="icon-plus icons" aria-hidden="true" style="margin: 0 auto;font-size: 48px; color: #fff;"></i>
+          <br />
+          <br />
+          <div class="text-left">
+          <span class="swiper-text">Building &amp; Construction</span>
+        </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+  
+  <div class="swiper-slide d-flex align-items-center">
+
+    <div class="d-flex align-items-center" style="display: block; background: #000; ">
+        <img src="https://unsplash.it/300/300?image=900" class="img-fluid equalize-main"/>
+        <a href="" class="d-flex align-items-center text-center equalize"  style="position: absolute; width: 100%; height: 100%; background: rgba(0,0,0,0.5)">
+        <div  style="    position: relative;width: 100%;height: 100%;padding: 10px;padding-top: 32%; pointer:cursor">
+          <i class="icon-plus icons" aria-hidden="true" style="margin: 0 auto;font-size: 48px; color: #fff;"></i>
+          <br />
+          <br />
+          <div class="text-left">
+          <span class="swiper-text">Building &amp; Construction</span>
+        </div>
+        </div>
+      </a>
+
+    </div>
+  </div>
+  
+
+</div>
+
+<div class="swiper-pagination mt-5"></div>
+
+<div class="swiper-button-next"></div>
+<div class="swiper-button-prev"></div>
+</div>
+</div>-->
+
+    </div>
+
+    <div class="row mt-0">
+      <div class="col-sm-12 mb-2 mt-0 text-center">
+
+        <a href="categories.html" class="btn btn-primary btn-lg" @click.prevent="show()" v-if="!showAll">View All Categories <i class="icon-arrow-right icons mt-5"></i></a>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+  var swiper = new Swiper('#swiper-container', {
+    pagination: '.swiper-pagination',
+    paginationClickable: true,
+    nextButton: '.swiper-button-next',
+    prevButton: '.swiper-button-prev',
+    spaceBetween: 30,
+    loop: true,
+    centeredSlides: false,
+    slidesPerView: 4,
+    slidesPerGroup: 3,
+    breakpoints: {
+      // when window width is <= 320px
+      380: {
+        slidesPerView: 1,
+        spaceBetween: 10
+      },
+      // when window width is <= 480px
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      // when window width is <= 640px
+      1000: {
+        slidesPerView: 3,
+        spaceBetween: 20
+      }
+    }
+  });
+</script>
+<div class=" light-blue  mt-5 pt-5 pb-5">
+  <div class="container inner pt-3 pb-3">
+
+
+    <div class="row">
+      <div class="col-sm-12">
+        <h3 class="text-center">RECEIVE THE BEST BUSINESS LISTINGS</h3>
+        <p class="text-center">Enter your email below to subscribe to our monthly newsletter</p>
+      </div>
+    </div>
+    <div class="row mt-2">
+      <div class="col-12">
+
+        <div class="d-flex justify-content-center mb-3">
+          <form class="form-inline">
+            <input type="text" class="form-control  form-control-lg mb-2 mr-sm-2 mb-sm-0 mr-auto ml-auto" id="inlineFormInput" style="width:300px" placeholder="e.g. my@email.com">
+
+
+
+            <button type="submit" class="btn btn-primary btn-lg mr-auto ml-auto">Subscribe</button>
+          </form>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  //jQuery is required to run this code
+  $(document).ready(function() {
+    $('.covervid-video').coverVid(1920, 1080);
+    //  scaleVideoContainer();
+
+    initBannerVideoSize('.video-container .poster img');
+    initBannerVideoSize('.video-container .filter');
+    initBannerVideoSize('.video-container video');
+
+    $(window).on('resize', function() {
+      scaleCategories();
+      $('.covervid-video').coverVid(1920, 1080);
+      //scaleVideoContainer();
+      scaleBannerVideoSize('.video-container .poster img');
+      scaleBannerVideoSize('.video-container .filter');
+      scaleBannerVideoSize('.video-container video');
+
+    });
+    scaleCategories();
+
+  });
+
+  function scaleCategories() {
+
+    var maxHeight = 0;
+
+    $('.equalize-main').each(function() {
+      if ($(this).height() > maxHeight) {
+        maxHeight = $(this).height();
+      }
+    });
+
+    $(".equalize").height(maxHeight).width(maxHeight);
+  }
+
+  function scaleVideoContainer() {
+
+    var height = 460;
+    var unitHeight = parseInt(height) + 'px';
+    $('.homepage-hero-module').css('height', unitHeight);
+
+  }
+
+  function initBannerVideoSize(element) {
+
+    $(element).each(function() {
+      $(this).data('height', $(this).height());
+      $(this).data('width', $(this).width());
+    });
+
+    scaleBannerVideoSize(element);
+
+  }
+
+  function scaleBannerVideoSize(element) {
+
+    var windowWidth = $(window).width(),
+      windowHeight = $(window).height() + 5,
+      videoWidth,
+      videoHeight;
+
+    // console.log(windowHeight);
+
+    $(element).each(function() {
+      var videoAspectRatio = $(this).data('height') / $(this).data('width');
+
+      $(this).width(windowWidth);
+
+      if (windowWidth < 1000) {
+        videoHeight = windowHeight;
+        videoWidth = videoHeight / videoAspectRatio;
+        //$(this).css({'margin-top' : 0, 'margin-left' : -(videoWidth - windowWidth) / 2 + 'px'});
+
+        $(this).width(videoWidth).height(videoHeight);
+      }
+
+      $('.homepage-hero-module .video-container video').addClass('fadeIn animated');
+
+    });
+  }
+</script>
+<script>
+  new Vue({
+    el: '#home',
+    data: {
+      currentView: 'buy',
+    },
+    methods: {
+      selectView: function(view) {
+        this.currentView = view;
+      }
+    }
+  })
+  new Vue({
+    el: '#categories',
+    data: {
+      showAll: false
+    },
+    methods: {
+      show: function() {
+        this.showAll = true;
+        setTimeout(function() {
+          scaleCategories();
+        }, 10);
+
+      }
+    }
+  })
+  new Vue({
+    el: '#featured-latest',
+    data: {
+      featured: true
+    },
+    methods: {
+      show: function(featured) {
+        this.featured = featured;
+      }
+    }
+  })
+</script>
+
+
+
+
+
+
+    
+
+      <footer class="footer text-white mt-0">
+		<div class="container">
+			<div class="row pt-5">
+
+				<div class="col-md-12">
+<div class="row">
+
+				<div class="col-md-12">
+					<h5 class="mt-4 mb-4 text-center">LOGO</h5>
+				</div>
+
+        <div class="col-md-6 offset-md-3">
+          <p class="mt-4 mb-4 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pellentesque molestie augue, ut congue erat ullamcorper vitae.</p>
+        </div>
+
+        <div class="col-md-6 offset-md-3">
+
+          <div class="d-flex justify-content-center mb-3 mt-3">
+            <ul class="social-network social-circle">
+                                    <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook fa-fw"></i></a></li>
+                                    <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter fa-fw"></i></a></li>
+                                    <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin fa-fw"></i></a></li>
+                                </ul>
+</div>
+
+
+        </div>
+
+
+
+
+
+				</div>
+				</div>
+
+
+			</div>
+			<br />
+			<br />
+		</div>
+      </footer>
+      
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+
+	<script>
+		var eventTime = moment().add(8, 'hours'); // Timestamp - Sun, 21 Apr 2013 13:00:00 GMT
+		var currentTime = 1366547400; // Timestamp - Sun, 21 Apr 2013 12:30:00 GMT
+		var diffTime = eventTime - currentTime;
+		var duration = moment.duration(diffTime*1000, 'milliseconds');
+		var interval = 1000;
+
+		setInterval(function(){
+		  duration = moment.duration(duration - interval, 'milliseconds');
+			$('#current_time').text(moment().format('MMMM Do YYYY, h:mma'));
+		}, interval);
+	</script>
+  </body>
+</html>
+
+    <script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='//www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','');ga('send','pageview');
+</script>
+
+    <script>
+var app = new Vue({
+  el: '#navbar',
+  data: {
+    search: false
+  },
+  methods: {
+    showSearchBar: function () {
+      this.search = true;
+    },
+    hideSearchBar: function () {
+      this.search = false;
+    }
+  }
+})
+</script>
+
+  </body>
+</html>

@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>SAFAQAH</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.css">
+    
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.2.1/vue.min.js" ></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.2/jquery.matchHeight-min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.4/js/bootstrap.min.js" integrity="sha384-VjEeINv9OSwtWFLAtmc4JCtEJXXBub00gtSnszmspDLCtC0I4z4nqz7rEFbIZLLU" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/js/swiper.min.js"></script>
+    <script src="https://unpkg.com/vue"></script>
+    <script src="https://unpkg.com/covervid@1.0.0"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js" ></script>
+
+  </head>
+  <body>
+
+    
+
+<nav class="navbar navbar-toggleable-md navbar-light bg-primary fixed-top"  id="navbar" v-cloak >
+
+
+
+  <transition name="fade" mode="out-in">
+  <div class="container " v-if="!search"  style="margin-top: 20px;">
+    <div style="position: absolute; top: -30px; right: 20px; font-size: 10px;" class="hidden-sm-down-bak">
+
+      <a href="" style="font-size: 10px;">English</a>
+      <span class="mr-1 ml-1">|</span>
+      <a href="" style="font-size: 10px;">&#x627;&#x644;&#x639;&#x631;&#x628;&#x64A;&#x629;</a>
+    </div>
+  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+  <a class="navbar-brand" href="index.html">SAFAQAH</a>
+  <div class="flag-selector" style="">
+    <div class="dropdown dropdown-country">
+      <button class="btn btn-secondary btn-xs dropdown-toggle" style="border: none; border-radius: 5px; background: transparent; cursor: pointer;" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/ae.svg" style="width: 8px"/> <span style="margin-top: 5px;     font-size: 11px;">UAE</span>
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/bh.svg" style="width: 12px"/> Bahrain</a>
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/kw.svg" style="width: 12px"/> Kuwait</a>
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/om.svg" style="width: 12px"/> Oman</a>
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/qa.svg" style="width: 12px"/> Qatar</a>
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/sa.svg" style="width: 12px"/> Saudi Arabia</a>
+        <a class="dropdown-item" href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/2.8.0/flags/1x1/ae.svg" style="width: 12px"/> UAE</a>
+      </div>
+    </div>
+                      </div>
+  <div class="collapse navbar-collapse" id="navbarColor01">
+
+    <ul class="navbar-nav mr-auto" >
+
+    </ul>
+    <ul class="navbar-nav" >
+
+      <li class="nav-item active dropdown">
+        <a class="nav-link dropdown-toggle" href="categories.html" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          All Categories
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="search.html">Agriculture <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Building & Construction <span class="text-muted">(2)</span></a>
+          <a class="dropdown-item" href="search.html">Computer, Internet & Technology <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Education <span class="text-muted">(2)</span></a>
+          <a class="dropdown-item" href="search.html">Entertainment & Leisure <span class="text-muted">(2)</span></a>
+          <a class="dropdown-item" href="search.html">Food & Beverage <span class="text-muted">(7)</span></a>
+          <a class="dropdown-item" href="search.html">Hair and Beauty <span class="text-muted">(2)</span></a>
+          <a class="dropdown-item" href="search.html">Health, Medical and Fitness <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Manufacturing <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Real Estate <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Retail <span class="text-muted">(4)</span></a>
+          <a class="dropdown-item" href="search.html">Service <span class="text-muted">(6)</span></a>
+          <a class="dropdown-item" href="search.html">Transportation <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Travel Related <span class="text-muted">(0)</span></a>
+          <a class="dropdown-item" href="search.html">Wholesale & Distribution <span class="text-muted">(0)</span></a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="how.html">How it works</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="pricing.html">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blog.html">Blog</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+      
+      <li class="nav-item mr-2">
+        <a class="nav-link" href="login.html"><i class="icon-user icons"></i></a>
+      </li>
+      
+      
+    </ul>
+  </div>
+    </div>
+
+    <div class="container" v-else>
+  <div class="input-group search-bar">
+  <span class="input-group-addon"><i class="icon-magnifier icons"></i></span>
+  <input type="text" class="form-control form-control-lg" placeholder="Search">
+  <span class="input-group-addon" ><a href="" class="text-muted" v-on:click.prevent="hideSearchBar"><i class="icon-close icons"></i></a></span>
+</div>
+    </div>
+    </transition>
+
+</nav>
+
+
+
+
+      
+
+<br />
+<br />
+<br />
+<div class="container inner">
+	<div class="card card-block bg-faded   mb-4">
+
+	<div class="row ">
+		<form action="search.html" class="form-inline">
+	<div class="col">
+		<div class="form-group row mb-0">
+				<div class="col-12">
+					<div class="input-group mb-0 mr-sm-2 mb-sm-0">
+						<div class="input-group-addon"><i class="icon-magnifier icons"></i></div>
+						<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Keyword">
+					</div>
+				</div>
+		</div>
+		</div>
+		<div class="col hidden-sm-down">
+			<div class="form-group row mb-0">
+				<div class="col-12">
+					<div class="input-group mb-0 mr-sm-2 mb-sm-0">
+						<div class="input-group-addon"><i class="icon-options-vertical icons"></i></div>
+						<select class=" form-control">
+							<option selected>Category</option>
+							<option value="1">Agriculture</option>
+							<option value="2">Building & Construction</option>
+							<option value="3">Computer, Internet & Technology</option>
+						</select>
+					</div>
+				</div>
+		</div>
+	</div>
+	<div class="col hidden-sm-down">
+		<div class="form-group row mb-0">
+				<div class="col-12">
+					<div class="input-group mb-0 mr-sm-2 mb-sm-0">
+						<div class="input-group-addon"><i class="icon-location-pin icons"></i></div>
+						<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Location">
+					</div>
+				</div>
+		</div>
+		</div>
+		<div class="col hidden-lg-down">
+			<div class="form-group row mb-0">
+				<div class="col-12">
+					<div class="input-group mb-0 mr-sm-2 mb-sm-0">
+						<div class="input-group-addon"><i class="icon-disc icons"></i></div>
+						<select class=" form-control">
+<option selected>Radius</option>
+<option value="1">50 miles</option>
+<option value="2">100 miles</option>
+<option value="3">200 miles</option>
+</select>
+					</div>
+				</div>
+		</div>
+	</div>
+		<div class="col">
+		<button type="submit" class="btn btn-danger btn-block">Search</button>
+
+	</div>
+</form>
+	</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-8">
+
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="row">
+						<div class="col-sm-12">
+							<h3>European Cuisine Restaurant for Takeover</h3>
+							<p class="mb-1">Food & Beverage</p>
+
+
+							<div class="row">
+								<div class="col-sm-6">
+									<p class="mb-1">Posted April 13, 2017 at 4:24 pm by Jon doe</p>
+								</div>
+							</div>
+							<br />
+							<br />
+              <ul id="vertical" class="gallery list-unstyled">
+                
+
+                                                      <li data-thumb="http://i.expresspixel.com/unsplash.it/100/100?image=1">
+                                                          <img src="http://i.expresspixel.com/unsplash.it/800/400?image=1" />
+                                                          </li>
+                                                          
+
+                                                      <li data-thumb="http://i.expresspixel.com/unsplash.it/100/100?image=2">
+                                                          <img src="http://i.expresspixel.com/unsplash.it/800/400?image=2" />
+                                                          </li>
+                                                          
+
+                                                      <li data-thumb="http://i.expresspixel.com/unsplash.it/100/100?image=3">
+                                                          <img src="http://i.expresspixel.com/unsplash.it/800/400?image=3" />
+                                                          </li>
+                                                          
+
+                                                      <li data-thumb="http://i.expresspixel.com/unsplash.it/100/100?image=4">
+                                                          <img src="http://i.expresspixel.com/unsplash.it/800/400?image=4" />
+                                                          </li>
+                                                          
+
+                                                      <li data-thumb="http://i.expresspixel.com/unsplash.it/100/100?image=5">
+                                                          <img src="http://i.expresspixel.com/unsplash.it/800/400?image=5" />
+                                                          </li>
+                                                          
+
+                                                      <li data-thumb="http://i.expresspixel.com/unsplash.it/100/100?image=6">
+                                                          <img src="http://i.expresspixel.com/unsplash.it/800/400?image=6" />
+                                                          </li>
+                                                          
+
+                                                      <li data-thumb="http://i.expresspixel.com/unsplash.it/100/100?image=7">
+                                                          <img src="http://i.expresspixel.com/unsplash.it/800/400?image=7" />
+                                                          </li>
+                                                          
+
+                                                      <li data-thumb="http://i.expresspixel.com/unsplash.it/100/100?image=8">
+                                                          <img src="http://i.expresspixel.com/unsplash.it/800/400?image=8" />
+                                                          </li>
+                                                          
+
+                                                      <li data-thumb="http://i.expresspixel.com/unsplash.it/100/100?image=9">
+                                                          <img src="http://i.expresspixel.com/unsplash.it/800/400?image=9" />
+                                                          </li>
+                                                          
+
+                                                  </ul>
+
+						</div>
+					</div>
+
+<br />
+<br />
+					<div class="row">
+<div class="col-md-12">
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" href="#">Overview</a>
+  </li>
+
+  <li class="nav-item" style="width: 100%">
+
+							<span class="badge badge-pill badge-info float-sm-right" style="margin-left: 5px;margin-top: 5px;">Drinks</span>
+							<span class="badge badge-pill badge-info float-sm-right" style="margin-left: 5px;margin-top: 5px;">Food</span>
+							<span class="badge badge-pill badge-danger float-sm-right" style="margin-left: 0px;margin-top: 5px;">Restaurant</span>
+
+  </li>
+</ul>
+
+					</div>
+					</div>
+					<br />
+					<br />
+
+					<!-- Tab panes -->
+<div class="tab-content">
+  <div class="tab-pane active" id="home" role="tabpanel">
+		<p><strong>I'm gonna build me an airport, put my name on it. Why, Michael? So you can fly away from your feelings? I don't care if it takes from now till the end of Shrimpfest.</strong></p>
+
+		<h6><strong>Lorem Ipsum is not a major key to success. </strong></h6>
+		<p>I’m giving you cloth talk, cloth. Special cloth alert, cut from a special cloth. Fan luv. Always remember in the jungle there’s a lot of they in there, after you overcome they, you will make it to paradise. Watch your back, but more importantly when you get out the shower, dry your back, it’s a cold world out there. Every chance I get, I water the plants, Lion! You see that bamboo behind me though, you see that bamboo? Ain’t nothin’ like bamboo. Bless up.</p>
+
+		<h6><strong>Hammock talk come soon. </strong></h6>
+		<p>Hammock talk come soon. It’s important to use cocoa butter. It’s the key to more success, why not live smooth? Why live rough? To be successful you’ve got to work hard, to make history, simple, you’ve got to make it. How’s business? Boomin. How’s business? Boomin. I’m up to something. Stay focused. Cloth talk. Let me be clear, you have to make it through the jungle to make it to paradise, that’s the key, Lion!</p>
+
+		<h6><strong>Ohhh little guy. .</strong></h6>
+		<p>Ohhh little guy. The tears aren't coming. The tears just aren't coming. Look, you are playing adults…with fully formed libidos, not 2 young men playing grab-ass in the shower. Boy, I sure feel like a Mary without a Peter and a Paul. And although the intervention didn't work, it turned into one of the Bluth family's better parties. I'm tired of trying to find happiness through lies and self-medicating. If you need me, I'll be at the bar. </p>
+  </div>
+
+  <div class="tab-pane" id="settings" role="tabpanel">...</div>
+</div>
+
+
+
+
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-4">
+			<div class="row">
+				<div class="col-sm-11 offset-sm-1">
+					<div class="card ">
+						<div class="card-block" class="pb-1">
+							<div class="row ">
+								<div class="col-sm-12">
+
+									<h4>Posted by</h4>
+<br />
+									<div class="row ">
+										<div class="col-sm-5">
+											<a href=""><img src="https://randomuser.me/api/portraits/men/51.jpg" class="img-fluid rounded-circle" /></a>
+											<br />
+											<br />
+										</div>
+										<div class="col-sm-6">
+											<h3 class="mb-0"><strong>Jon doe</strong></h3>
+											<p class="mt-0 mb-0">Chiargo, IL</p>
+											<p class="mt-0 mb-0"><i class="icon-phone icons"></i> 81006XXX</p>
+										</div>
+									</div>
+									<div class="row ">
+										<div class="col-sm-6 mb-2">
+											<a href="" class="text-muted mb-2"><i class="fa fa-fw fa-share-alt" aria-hidden="true"></i> Share</a>
+										</div>
+										<div class="col-sm-6 mb-2">
+											<a href="" class="text-muted"><i class="fa fa-fw fa-print" aria-hidden="true"></i> Print</a>
+										</div>
+										<div class="col-sm-6">
+											<a href="" class="text-muted"><i class="fa fa-fw fa-question-circle" aria-hidden="true"></i> Ask Question</a>
+										</div>
+										<div class="col-sm-6">
+											<a href="" class="text-muted"><i class="fa fa-fw fa-flag" aria-hidden="true"></i> Report Ad</a>
+										</div>
+									</div>
+                  <br />
+                  <br />
+									<a href="" class="btn btn-lg btn-primary btn-block">Call For Info</a><br />
+
+								</div>
+
+							</div>
+						</div>
+						<div class="card-footer text-center">
+      <strong class="h4 pricing" style="">$125,000.00</strong>
+    </div>
+					</div>
+					<div class="card mt-5">
+						<div class="card-block" class="pb-0">
+							<div class="row ">
+								<div class="col-sm-12">
+
+									<h4 class="mb-0 pb-0">Location</h4>
+								</div>
+
+							</div>
+						</div>
+            <img class="img-fluid" src="https://maps.googleapis.com/maps/api/staticmap?center=Albany,+NY&zoom=13&scale=1&size=600x300&maptype=roadmap&format=png&visual_refresh=true&key=AIzaSyB0GyX-SVDaT9pEde-p2HMtgb4YgkKCzMM" />
+
+					</div>
+					<div class="card mt-5">
+
+						<div class="card-block" class="pb-0" style="border-bottom: 1px solid rgba(0, 0, 0, 0.125)">
+							<div class="row ">
+								<div class="col-sm-12">
+
+									<h4 class="mb-0 pb-0">Reply to Ad</h4>
+								</div>
+
+							</div>
+						</div>
+						<div class="card-block" class="pb-0">
+							<div class="row ">
+								<div class="col-sm-12">
+									<form>
+									<div class="row">
+									<div class="col-12">
+
+									  <div class="form-group">
+									    <label for="exampleInputPassword1">Your name</label>
+									    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="e.g. Jack" />
+									  </div>
+
+									  <div class="form-group">
+									    <label for="exampleInputEmail1">Email address</label>
+									    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="e.g. jack@sparrow.com" />
+									    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+									  </div>
+
+									  <div class="form-group">
+									    <label for="exampleInputPassword1">Phone number</label>
+									    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="+44 555 2364" />
+									  </div>
+
+
+									  <div class="form-group">
+									    <label for="exampleInputEmail1">Message</label>
+									    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
+									  </div>
+
+									</div>
+									</div>
+
+
+
+
+
+									</form>
+								</div>
+
+							</div>
+						</div>
+
+						<div class="card-footer text-center">
+							<button type="submit" class="btn btn-primary">Send message</button>
+		</div>
+
+					</div>
+
+
+<div class="card mt-5 mb-5">
+  <div class="card-block" class="pb-0">
+    <div class="row ">
+      <div class="col-sm-12">
+
+        <h4 class="mb-0 pb-0">Similar Ads</h4>
+      </div>
+
+    </div>
+    </div>
+
+    <ul class="list-group list-group-flush">
+
+      
+
+  <li class="list-group-item">
+    <div class="row ">
+      <div class="col-sm-4">
+
+        <img src="http://i.expresspixel.com/unsplash.it/100/100?image=40" class="img-fluid"/>
+
+      </div>
+      <div class="col-sm-8">
+
+        <h6 class="mb-0 pb-0 text-muted">Indoor Nerf Shooting Arena</h6>
+        <h6 class="text-primary">$300 USD</h6>
+      </div>
+
+    </div>
+
+  </li>
+  		
+
+  <li class="list-group-item">
+    <div class="row ">
+      <div class="col-sm-4">
+
+        <img src="http://i.expresspixel.com/unsplash.it/100/100?image=80" class="img-fluid"/>
+
+      </div>
+      <div class="col-sm-8">
+
+        <h6 class="mb-0 pb-0 text-muted">Indoor Nerf Shooting Arena</h6>
+        <h6 class="text-primary">$300 USD</h6>
+      </div>
+
+    </div>
+
+  </li>
+  		
+
+  <li class="list-group-item">
+    <div class="row ">
+      <div class="col-sm-4">
+
+        <img src="http://i.expresspixel.com/unsplash.it/100/100?image=120" class="img-fluid"/>
+
+      </div>
+      <div class="col-sm-8">
+
+        <h6 class="mb-0 pb-0 text-muted">Indoor Nerf Shooting Arena</h6>
+        <h6 class="text-primary">$300 USD</h6>
+      </div>
+
+    </div>
+
+  </li>
+  		
+
+  <li class="list-group-item">
+    <div class="row ">
+      <div class="col-sm-4">
+
+        <img src="http://i.expresspixel.com/unsplash.it/100/100?image=160" class="img-fluid"/>
+
+      </div>
+      <div class="col-sm-8">
+
+        <h6 class="mb-0 pb-0 text-muted">Indoor Nerf Shooting Arena</h6>
+        <h6 class="text-primary">$300 USD</h6>
+      </div>
+
+    </div>
+
+  </li>
+  		
+
+  <li class="list-group-item">
+    <div class="row ">
+      <div class="col-sm-4">
+
+        <img src="http://i.expresspixel.com/unsplash.it/100/100?image=200" class="img-fluid"/>
+
+      </div>
+      <div class="col-sm-8">
+
+        <h6 class="mb-0 pb-0 text-muted">Indoor Nerf Shooting Arena</h6>
+        <h6 class="text-primary">$300 USD</h6>
+      </div>
+
+    </div>
+
+  </li>
+  		
+
+</ul>
+
+  </div>
+  </div>
+
+</div>
+
+
+
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script>
+$('.nav-tabs a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
+$(document).ready(function() {
+  $('#vertical').lightSlider({
+    gallery:true,
+    item:1,
+    vertical:true,
+    verticalHeight:400,
+    vThumbWidth:150,
+    vThumbHeight:150,
+    thumbItem:6,
+    thumbMargin:4,
+    slideMargin:0
+  });
+});
+</script>
+
+
+
+
+    
+
+      <footer class="footer text-white mt-0">
+		<div class="container">
+			<div class="row pt-5">
+
+				<div class="col-md-12">
+<div class="row">
+
+				<div class="col-md-12">
+					<h5 class="mt-4 mb-4 text-center">LOGO</h5>
+				</div>
+
+        <div class="col-md-6 offset-md-3">
+          <p class="mt-4 mb-4 text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi pellentesque molestie augue, ut congue erat ullamcorper vitae.</p>
+        </div>
+
+        <div class="col-md-6 offset-md-3">
+
+          <div class="d-flex justify-content-center mb-3 mt-3">
+            <ul class="social-network social-circle">
+                                    <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook fa-fw"></i></a></li>
+                                    <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter fa-fw"></i></a></li>
+                                    <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin fa-fw"></i></a></li>
+                                </ul>
+</div>
+
+
+        </div>
+
+
+
+
+
+				</div>
+				</div>
+
+
+			</div>
+			<br />
+			<br />
+		</div>
+      </footer>
+      
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+
+
+	<script>
+		var eventTime = moment().add(8, 'hours'); // Timestamp - Sun, 21 Apr 2013 13:00:00 GMT
+		var currentTime = 1366547400; // Timestamp - Sun, 21 Apr 2013 12:30:00 GMT
+		var diffTime = eventTime - currentTime;
+		var duration = moment.duration(diffTime*1000, 'milliseconds');
+		var interval = 1000;
+
+		setInterval(function(){
+		  duration = moment.duration(duration - interval, 'milliseconds');
+			$('#current_time').text(moment().format('MMMM Do YYYY, h:mma'));
+		}, interval);
+	</script>
+  </body>
+</html>
+
+    <script>
+  (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+  function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+  e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+  e.src='//www.google-analytics.com/analytics.js';
+  r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+  ga('create','');ga('send','pageview');
+</script>
+
+    <script>
+var app = new Vue({
+  el: '#navbar',
+  data: {
+    search: false
+  },
+  methods: {
+    showSearchBar: function () {
+      this.search = true;
+    },
+    hideSearchBar: function () {
+      this.search = false;
+    }
+  }
+})
+</script>
+
+  </body>
+</html>
